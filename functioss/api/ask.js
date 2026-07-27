@@ -1,0 +1,96 @@
+// Cloudflare Pages Function
+// Route: POST /api/ask
+
+const LANG_NAMES = {
+    el: "Greek", en: "English", fr: "French", de: "German", es: "Spanish",
+    it: "Italian", zh: "Chinese", ja: "Japanese", ru: "Russian"
+};
+
+const SYSTEM_PROMPT = `Είσαι ο ψηφιακός θυρωρός (AI concierge) του καταλύματος "Λόφος Επισκοπής" στην Επισκοπή, Άνω Βόλος, Ελλάδα (οδός Επισκοπής 43), περίπου στο 5ο χλμ. της διαδρομής Βόλου-Πορταριάς, σε υψόμετρο ~140μ.
+
+ΒΑΣΙΚΑ ΣΤΟΙΧΕΙΑ ΚΑΤΑΛΥΜΑΤΟΣ:
+- Ιδιοκτήτες: Γιώργος και Δέσποινα. Επικοινωνία: +30 6936362169 (Viber/WhatsApp/Messenger).
+- Check-in/check-out: Ευέλικτο, κατόπιν συνεννόησης με τον ιδιοκτήτη.
+- Wi-Fi: Δίκτυο "TP-Link_84FE", κωδικός "22170811".
+- Σούπερ μάρκετ/φαρμακείο: οδός Ιωλκού, 3-5 λεπτά με το αυτοκίνητο.
+- Ταξί: Ραδιοταξί Βόλου, τηλέφωνο 24210-27777 (~6€ προς το κέντρο).
+
+ΠΡΟΤΕΙΝΟΜΕΝΑ ΜΕΡΗ (ενδεικτικά, ανάλογα με την ερώτηση):
+- Φαγητό/τσίπουρο: Μεζέν, Δεμίρης, Κάβουρας, Φιλαράκι, Ιώδιο, Παπαδής (Βόλος)· Κρίτσα, Ορτανσίες, Το Κατώφλι της Καίτης (Πορταριά/Κατηχώρι)· Ταβέρνα Θωμά (Αγριά)· Ιππόκαμπος (Αλυκές).
+- Παραλίες: Αναύρου (πιο κοντινή), Καλά Νερά, Άφησσος, Άγιοι Σαράντα, Μυλοπόταμος, Άγιος Ιωάννης.
+- Εκδρομές/χωριά: Πορταριά, Μακρινίτσα, Μηλιές, Παλαιό Τρίκερι (νησάκι, χρειάζεται πλοιάριο), Μετέωρα (~1.5-2 ώρες οδικώς).
+
+ΚΑΝΟΝΕΣ:
+1. Απάντα ΠΑΝΤΑ στη γλώσσα που σου ζητείται, ανεξαρτήτως της γλώσσας της ερώτησης.
+2. Οι απαντήσεις σου εκφωνούνται φωνητικά (text-to-speech): γράψε 1-3 σύντομες, φυσικές προτάσεις. ΜΗΝ χρησιμοποιείς markdown (αστεράκια, παύλες λίστας, κλπ) ούτε emoji.
+3. Αν δεν ξέρεις κάτι με σιγουριά (π.χ. πραγματικός καιρός, τρέχουσες τιμές, διαθεσιμότητα), πες το ειλικρινά και πρότεινε να επικοινωνήσει ο επισκέπτης με τους ιδιοκτήτες.
+4. Μείνε πάντα στο ρόλο του φιλόξενου, ζεστού οικοδεσπότη τοπικής περιοχής (Βόλος/Πήλιο). Μην απαντάς σε ερωτήσεις άσχετες με τη διαμονή/περιοχή.`;
+
+export async function onRequestPost(context) {
+    const { request, env } = context;
+
+    try {
+        const apiKey = env.GEMINI_API_KEY;
+        if (!apiKey) {
+            return json({ error: "Το API key δεν έχει ρυθμιστεί ακόμα στον server (GEMINI_API_KEY)." }, 500);
+        }
+
+        let body;
+        try {
+            body = await request.json();
+        } catch (e) {
+            return json({ error: "Invalid JSON body" }, 400);
+        }
+
+        const userMessage = (body && body.message ? String(body.message) : "").trim().slice(0, 500);
+        const lang = (body && body.lang ? String(body.lang) : "el").toLowerCase();
+        if (!userMessage) {
+            return json({ error: "Empty message" }, 400);
+        }
+
+        const targetLanguage = LANG_NAMES[lang] || "Greek";
+        const fullSystemPrompt = `${SYSTEM_PROMPT}\n\nΑπάντα ΑΠΟΚΛΕΙΣΤΙΚΑ στα ${targetLanguage}, ό,τι γλώσσα κι αν χρησιμοποίησε ο επισκέπτης.`;
+
+        const payload = {
+            contents: [{ role: "user", parts: [{ text: userMessage }] }],
+            systemInstruction: { parts: [{ text: fullSystemPrompt }] },
+            generationConfig: { maxOutputTokens: 200, temperature: 0.4 }
+        };
+
+        // Διορθωμένο URL με το gemini-1.5-flash
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+        const geminiResponse = await fetch(apiUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+        });
+
+        const data = await geminiResponse.json();
+
+        if (!geminiResponse.ok || data.error) {
+            console.error("Gemini API error:", data.error || geminiResponse.status);
+            return json({ error: "Gemini API error" }, 502);
+        }
+
+        const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+        if (!reply.trim()) {
+            return json({ error: "Empty reply from model" }, 502);
+        }
+
+        return json({ reply: reply.trim() }, 200);
+    } catch (err) {
+        console.error("Proxy error:", err);
+        return json({ error: "Server error" }, 500);
+    }
+}
+
+export async function onRequestGet() {
+    return json({ error: "Use POST" }, 405);
+}
+
+function json(obj, status) {
+    return new Response(JSON.stringify(obj), {
+        status,
+        headers: { "Content-Type": "application/json" }
+    });
+}
