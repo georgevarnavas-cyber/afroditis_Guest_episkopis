@@ -90,7 +90,9 @@ export async function onRequestPost(context) {
 
         if (!geminiResponse.ok || data.error) {
             console.error("Gemini API error:", data.error || geminiResponse.status);
-            return json({ error: "Gemini API error" }, 502);
+            // ΠΡΟΣΩΡΙΝΟ: δείχνουμε το ακριβές μήνυμα του Google στον client, μόνο για διάγνωση.
+            const detail = (data && data.error && data.error.message) ? data.error.message : ("HTTP " + geminiResponse.status);
+            return json({ error: "Gemini API error", detail }, 502);
         }
 
         const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
