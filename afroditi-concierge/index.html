@@ -874,8 +874,12 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ message: userText, lang: currentLang })
                 });
-                if (!response.ok) throw new Error('bad status: ' + response.status);
-                const data = await response.json();
+                const data = await response.json().catch(() => ({}));
+                if (!response.ok) {
+                    // ΠΡΟΣΩΡΙΝΟ (διάγνωση): δείχνουμε στην κονσόλα το ακριβές μήνυμα του server/Gemini
+                    console.error('Live AI error - status:', response.status, '| server detail:', data.error, data.detail);
+                    throw new Error('bad status: ' + response.status);
+                }
                 if (data && data.reply && data.reply.trim()) {
                     return { text: data.reply.trim(), source: 'varnavas' };
                 }
