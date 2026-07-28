@@ -4,7 +4,7 @@
 const LANG_NAMES = {
     el: "Greek", en: "English", fr: "French", de: "German", es: "Spanish",
     it: "Italian", zh: "Chinese", ja: "Japanese", ru: "Russian"
-};https://github.com/georgevarnavas-cyber/afroditis_Guest_episkopis/blob/main/functions/api/ask.js
+};
 
 // 1. ΕΔΩ ΒΑΖΕΙΣ ΤΙΣ "ΑΠΟΘΗΚΕΥΜΕΝΕΣ" ΕΡΩΤΗΣΕΙΣ ΚΑΙ ΑΠΑΝΤΗΣΕΙΣ
 // Γράψε τις ερωτήσεις με πεζά γράμματα και χωρίς τόνους (για πιο εύκολο ταίριασμα)
@@ -32,9 +32,7 @@ const SYSTEM_PROMPT = `Είσαι ο ψηφιακός θυρωρός (AI concier
 1. Απάντα ΠΑΝΤΑ στη γλώσσα που σου ζητείται, ανεξαρτήτως της γλώσσας της ερώτησης.
 2. Οι απαντήσεις σου εκφωνούνται φωνητικά (text-to-speech): γράψε 1-3 σύντομες, φυσικές προτάσεις. ΜΗΝ χρησιμοποιείς markdown (αστεράκια, παύλες λίστας, κλπ) ούτε emoji.
 3. Αν δεν ξέρεις κάτι με σιγουριά για το κατάλυμα, πρότεινε να επικοινωνήσει ο επισκέπτης με τους ιδιοκτήτες.
-4. ΑΥΣΤΗΡΗ ΕΝΤΟΛΗ: Απαγορεύεται να αρνηθείς να απαντήσεις! Αν ο χρήστης ρωτήσει κάτι εντελώς άσχετο με το κατάλυμα (π.χ. κατοικίδια, γενικές γνώσεις, άσχετες λέξεις), ΠΡΕΠΕΙ ΝΑ ΑΠΑΝΤΗΣΕΙΣ ΚΑΝΟΝΙΚΑ χρησιμοποιώντας τις γνώσεις σου από το διαδίκτυο. ΜΗΝ πεις ποτέ ότι "γνωρίζεις μόνο για το κατάλυμα".
-
-;
+4. Αν ο επισκέπτης ρωτήσει κάτι άσχετο με το κατάλυμα (π.χ. γενικές γνώσεις, τοπικές πληροφορίες, οτιδήποτε άλλο), απάντα κανονικά χρησιμοποιώντας τις γενικές σου γνώσεις - μην αρνηθείς ποτέ και μην πεις ότι γνωρίζεις μόνο για το κατάλυμα.`;
 
 export async function onRequestPost(context) {
     const { request, env } = context;
@@ -54,19 +52,19 @@ export async function onRequestPost(context) {
 
         const userMessage = (body && body.message ? String(body.message) : "").trim().slice(0, 500);
         const lang = (body && body.lang ? String(body.lang) : "el").toLowerCase();
-        
+
         if (!userMessage) {
             return json({ error: "Empty message" }, 400);
         }
 
         // 2. ΕΛΕΓΧΟΣ ΑΝ ΥΠΑΡΧΕΙ ΗΔΗ Η ΕΡΩΤΗΣΗ ΣΤΙΣ ΑΠΟΘΗΚΕΥΜΕΝΕΣ
         // Καθαρίζουμε το μήνυμα του χρήστη για να κάνουμε πιο εύκολη την αναζήτηση
-        const normalizedMessage = userMessage.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); 
-        
+        const normalizedMessage = userMessage.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
         for (const [key, savedAnswer] of Object.entries(SAVED_ANSWERS)) {
             if (normalizedMessage.includes(key)) {
                 // Αν βρέθηκε έτοιμη απάντηση, την επιστρέφουμε αμέσως και ΤΕΡΜΑΤΙΖΟΥΜΕ τη συνάρτηση.
-                // Το varnavas.ai (Gemini) ΔΕΝ καλείται καθόλου, γλιτώνοντας χρόνο και API calls!
+                // Το Gemini ΔΕΝ καλείται καθόλου, γλιτώνοντας χρόνο και API calls.
                 return json({ reply: savedAnswer }, 200);
             }
         }
