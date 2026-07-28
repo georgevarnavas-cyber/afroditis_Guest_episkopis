@@ -79,7 +79,7 @@ export async function onRequestPost(context) {
             generationConfig: { maxOutputTokens: 200, temperature: 0.4 }
         };
 
-        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${apiKey}`;
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`;
         const geminiResponse = await fetch(apiUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
