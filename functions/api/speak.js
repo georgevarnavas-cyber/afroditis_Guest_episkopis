@@ -15,7 +15,7 @@
 // Φυσική, ζεστή γυναικεία φωνή (προεπιλογή ElevenLabs "Rachel"). Μπορείς να την αλλάξεις:
 // πήγαινε στο elevenlabs.io -> Voice Library, βρες μια φωνή που σου αρέσει, αντίγραψε το
 // Voice ID της, και άλλαξέ το εδώ.
-const VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
+const VOICE_ID = "221m00Tcm4TlvDq8ikWAM";
 
 export async function onRequestPost(context) {
     const { request, env } = context;
