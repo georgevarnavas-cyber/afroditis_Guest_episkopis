@@ -1,21 +1,8 @@
-// Cloudflare Pages Function
-// Route: POST /api/speak
-//
-// Κρυφό proxy προς το ElevenLabs Text-to-Speech API. Το πραγματικό key διαβάζεται
-// από Cloudflare secret (env.ELEVENLABS_API_KEY) - ΔΕΝ εμφανίζεται ποτέ στον client.
-//
-// ΡΥΘΜΙΣΗ (μία φορά, στο Cloudflare dashboard, ΣΤΟ ΙΔΙΟ project όπου έβαλες και το GEMINI_API_KEY):
-//   Settings -> Environment variables -> Add variable
-//   Name: ELEVENLABS_API_KEY   Value: <το key σου>   Type: Secret
-//   Μετά, νέο deployment για να ενεργοποιηθεί.
-//
-// Ο client (index.html) καλεί: fetch('/api/speak', { method:'POST', body: {text} })
-// και παίρνει πίσω απευθείας τον ήχο (audio/mpeg), όχι JSON.
+// Cloudflare Pages Function: POST /api/speak
+// Proxy προς το ElevenLabs Text-to-Speech API.
 
-// Φυσική, ζεστή γυναικεία φωνή (προεπιλογή ElevenLabs "Rachel"). Μπορείς να την αλλάξεις:
-// πήγαινε στο elevenlabs.io -> Voice Library, βρες μια φωνή που σου αρέσει, αντίγραψε το
-// Voice ID της, και άλλαξέ το εδώ.
-const VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
+// Προεπιλεγμένη ΔΩΡΕΑΝ φωνή "Rachel" (ElevenLabs)
+const DEFAULT_VOICE_ID = "21m00Tcm4TlvDq8ikWAM";
 
 export async function onRequestPost(context) {
     const { request, env } = context;
@@ -33,13 +20,15 @@ export async function onRequestPost(context) {
             return json({ error: "Invalid JSON body" }, 400);
         }
 
-        // Περιορισμός μήκους για έλεγχο κόστους (οι απαντήσεις μας είναι ούτως ή άλλως σύντομες)
         const text = (body && body.text ? String(body.text) : "").trim().slice(0, 800);
         if (!text) {
             return json({ error: "Empty text" }, 400);
         }
 
-        const elevenResponse = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}`, {
+        // Χρήση του voiceId που στέλνει το frontend, αλλιώς fallback στη Rachel
+        const targetVoiceId = body.voiceId || DEFAULT_VOICE_ID;
+
+        const elevenResponse = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${targetVoiceId}`, {
             method: "POST",
             headers: {
                 "xi-api-key": apiKey,
@@ -48,8 +37,6 @@ export async function onRequestPost(context) {
             },
             body: JSON.stringify({
                 text: text,
-                // eleven_multilingual_v2: υποστηρίζει Ελληνικά + όλες τις υπόλοιπες 8 γλώσσες μας,
-                // ανιχνεύει αυτόματα τη γλώσσα από το ίδιο το κείμενο.
                 model_id: "eleven_multilingual_v2",
                 voice_settings: { stability: 0.5, similarity_boost: 0.75 }
             })
@@ -61,7 +48,6 @@ export async function onRequestPost(context) {
             return json({ error: "ElevenLabs API error", detail: errText.slice(0, 300) || ("HTTP " + elevenResponse.status) }, 502);
         }
 
-        // Επιστρέφουμε τον ήχο απευθείας στον client (όχι JSON)
         const audioBuffer = await elevenResponse.arrayBuffer();
         return new Response(audioBuffer, {
             status: 200,
