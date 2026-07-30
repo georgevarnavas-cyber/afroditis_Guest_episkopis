@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="el">
 <head>
     <meta charset="UTF-8">
@@ -302,8 +302,6 @@ a<!DOCTYPE html>
            (χρησιμοποιούνται μόνο μέσα σε JS templates, άρα δεν "πιάστηκαν" στο build).
            Η .h-full είναι κρίσιμη: χωρίς αυτήν οι φωτογραφίες των εμπειριών δεν παίρνουν
            σωστό ύψος μέσα στο γονικό τους container. */
-        .absolute{position:absolute}
-        .inset-0{inset:0}
         .h-full{height:100%}
         .p-3{padding:calc(var(--spacing) * 3)}
         .pt-1{padding-top:var(--spacing)}
@@ -683,8 +681,8 @@ a<!DOCTYPE html>
                     ru: "Аутентичная ципурадика в Волосе! Свежие морепродукты подаются к каждому кругу ципуро."
                 },
                 images: [
-                    "afroditi/tsipouradiko-1.jpg",
-                    "afroditi/tsipouradiko-2.jpg"
+                    "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80",
+                    "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
                 ],
                 lat: 39.3621, lng: 22.9422
             },
@@ -714,8 +712,8 @@ a<!DOCTYPE html>
                     ru: "Самый знаменитый пляж Пелиона с величественной скальной аркой."
                 },
                 images: [
-                    "afroditi/milopotamos-1.jpg",
-                    "afroditi/milopotamos-2.jpg"
+                    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+                    "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80"
                 ],
                 lat: 39.3789, lng: 23.1492
             },
@@ -745,8 +743,8 @@ a<!DOCTYPE html>
                     ru: "Традиционная каменная деревня с панорамным видом на весь Пагаситический залив."
                 },
                 images: [
-                    "afroditi/makrinitsa-1.jpg",
-                    "afroditi/makrinitsa-2.jpg"
+                    "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=600&q=80",
+                    "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80"
                 ],
                 lat: 39.4019, lng: 22.9864
             }
@@ -806,12 +804,8 @@ a<!DOCTYPE html>
                 let imagesHtml = '';
                 place.images.forEach((imgUrl, idx) => {
                     imagesHtml += `
-                        <div class="snap-center shrink-0 w-full h-44 rounded-xl overflow-hidden bg-slate-100 relative flex items-center justify-center">
-                            <img src="${imgUrl}" alt="${escapeHtml(title)} photo ${idx + 1}" loading="lazy" class="w-full h-full object-cover fade-in-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-                            <div class="absolute inset-0 flex-col items-center justify-center text-slate-400 text-[10px] gap-1" style="display:none;">
-                                <span style="font-size:22px;">🖼️</span>
-                                <span>${escapeHtml(imgUrl.split('/').pop())}</span>
-                            </div>
+                        <div class="snap-center shrink-0 w-full h-44 rounded-xl overflow-hidden bg-slate-100 relative">
+                            <img src="${imgUrl}" alt="${escapeHtml(title)} photo ${idx + 1}" loading="lazy" class="w-full h-full object-cover fade-in-img" />
                         </div>
                     `;
                 });
