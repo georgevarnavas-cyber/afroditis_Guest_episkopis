@@ -1,312 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="el">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Afroditi Guest House | AI Concierge</title>
-    <meta name="description" content="Afroditi Guest House — Ο προσωπικός σας AI concierge για φαγητό, παραλίες, εκδρομές και πληροφορίες διαμονής στον Βόλο και το Πήλιο.">
+    <title>Λόφος Επισκοπής | AI Concierge</title>
+    <meta name="description" content="Λόφος Επισκοπής — Ο προσωπικός σας AI concierge για φαγητό, παραλίες, εκδρομές και πληροφορίες διαμονής στον Βόλο και το Πήλιο.">
     <meta name="theme-color" content="#4A5D23">
-    <meta property="og:title" content="Afroditi Guest House | AI Concierge">
-    <meta property="og:description" content="Ρωτήστε τον AI concierge μας για φαγητό, παραλίες, εκδρομές και πληροφορίες διαμονής.">
+    <meta property="og:title" content="Λόφος Επισκοπής | AI Concierge">
+    <meta property="og:description" content="Ρωτήστε τον AI concierge μας για φαγητό, παραλίες, εκδρομές, wifi και κανόνες διαμονής.">
     <meta property="og:type" content="website">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏡%3C/text%3E%3C/svg%3E">
     <style>
-        /* Στατικό, προ-μεταγλωττισμένο Tailwind CSS (Tailwind CLI v4.3.3) */
-        /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
-        @layer properties {
-            @supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){
-                *,:before,:after,::backdrop{
-                    --tw-rotate-x:initial;--tw-rotate-y:initial;--tw-rotate-z:initial;--tw-skew-x:initial;--tw-skew-y:initial;
-                    --tw-scroll-snap-strictness:proximity;--tw-space-y-reverse:0;--tw-border-style:solid;--tw-leading:initial;
-                    --tw-font-weight:initial;--tw-tracking:initial;--tw-shadow:0 0 #0000;--tw-shadow-color:initial;
-                    --tw-shadow-alpha:100%;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-color:initial;--tw-inset-shadow-alpha:100%;
-                    --tw-ring-color:initial;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-color:initial;--tw-inset-ring-shadow:0 0 #0000;
-                    --tw-ring-inset:initial;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000;
-                    --tw-outline-style:solid;--tw-backdrop-blur:initial;--tw-backdrop-brightness:initial;--tw-backdrop-contrast:initial;
-                    --tw-backdrop-grayscale:initial;--tw-backdrop-hue-rotate:initial;--tw-backdrop-invert:initial;--tw-backdrop-opacity:initial;
-                    --tw-backdrop-saturate:initial;--tw-backdrop-sepia:initial
-                }
-            }
-        }
-        @layer theme {
-            :root,:host {
-                --font-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                --font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-                --color-red-50:oklch(97.1% .013 17.38);--color-red-100:oklch(93.6% .032 17.717);--color-red-600:oklch(57.7% .245 27.325);
-                --color-orange-50:oklch(98% .016 73.684);--color-orange-600:oklch(64.6% .222 41.116);--color-amber-50:oklch(98.7% .022 95.277);
-                --color-amber-500:oklch(76.9% .188 70.08);--color-amber-600:oklch(66.6% .179 58.318);--color-purple-50:oklch(97.7% .014 308.299);
-                --color-purple-600:oklch(55.8% .288 302.321);--color-slate-50:oklch(98.4% .003 247.858);--color-slate-100:oklch(96.8% .007 247.896);
-                --color-slate-200:oklch(92.9% .013 255.508);--color-slate-400:oklch(70.4% .04 256.788);--color-slate-500:oklch(55.4% .046 257.417);
-                --color-slate-600:oklch(44.6% .043 257.281);--color-slate-700:oklch(37.2% .044 257.287);--color-slate-800:oklch(27.9% .041 260.031);
-                --color-slate-900:oklch(20.8% .042 265.755);--color-white:#fff;--spacing:.25rem;--container-md:28rem;--text-xs:.75rem;
-                --text-xs--line-height:calc(1 / .75);--text-sm:.875rem;--text-sm--line-height:calc(1.25 / .875);--text-lg:1.125rem;
-                --text-lg--line-height:calc(1.75 / 1.125);--font-weight-medium:500;--font-weight-semibold:600;--font-weight-bold:700;
-                --tracking-tight:-.025em;--tracking-wider:.05em;--leading-relaxed:1.625;--radius-lg:.5rem;--radius-xl:.75rem;
-                --radius-2xl:1rem;--animate-pulse:pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;--animate-bounce:bounce 1s infinite;
-                --blur-md:12px;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4, 0, .2, 1);
-                --default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)
-            }
-        }
-        @layer base {
-            *,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}
-            ::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}
-            html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--default-font-family,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}
-            hr{height:0;color:inherit;border-top-width:1px}
-            abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}
-            h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}
-            a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}
-            b,strong{font-weight:bolder}
-            code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}
-            small{font-size:80%}
-            sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}
-            sub{bottom:-.25em}
-            sup{top:-.5em}
-            table{text-indent:0;border-color:inherit;border-collapse:collapse}
-            :-moz-focusring:where(:not(iframe)){outline:auto}
-            progress{vertical-align:baseline}
-            summary{display:list-item}
-            ol,ul,menu{list-style:none}
-            img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}
-            img,video{max-width:100%;height:auto}
-            button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}
-            ::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}
-            :where(select:is([multiple],[size])) optgroup{font-weight:bolder}
-            :where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}
-            ::file-selector-button{margin-inline-end:4px}
-            ::placeholder{opacity:1}
-            @supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){
-                ::placeholder{color:currentColor}
-                @supports (color:color-mix(in lab, red, red)){::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}
-            }
-            textarea{resize:vertical}
-            ::-webkit-search-decoration{-webkit-appearance:none}
-            ::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}
-            ::-webkit-datetime-edit{display:inline-flex}
-            ::-webkit-datetime-edit-fields-wrapper{padding:0}
-            ::-webkit-datetime-edit{padding-block:0}
-            ::-webkit-datetime-edit-year-field{padding-block:0}
-            ::-webkit-datetime-edit-month-field{padding-block:0}
-            ::-webkit-datetime-edit-day-field{padding-block:0}
-            ::-webkit-datetime-edit-hour-field{padding-block:0}
-            ::-webkit-datetime-edit-minute-field{padding-block:0}
-            ::-webkit-datetime-edit-second-field{padding-block:0}
-            ::-webkit-datetime-edit-millisecond-field{padding-block:0}
-            ::-webkit-datetime-edit-meridiem-field{padding-block:0}
-            ::-webkit-calendar-picker-indicator{line-height:1}
-            :-moz-ui-invalid{box-shadow:none}
-            button,input:where([type=button],[type=reset],[type=submit]){appearance:button}
-            ::file-selector-button{appearance:button}
-            ::-webkit-inner-spin-button{height:auto}
-            ::-webkit-outer-spin-button{height:auto}
-            [hidden]:where(:not([hidden=until-found])){display:none!important}
-        }
-        @layer utilities {
-            .relative{position:relative}
-            .sticky{position:sticky}
-            .top-0{top:0}
-            .z-10{z-index:10}
-            .container{width:100%}
-            @media (min-width:40rem){.container{max-width:40rem}}
-            @media (min-width:48rem){.container{max-width:48rem}}
-            @media (min-width:64rem){.container{max-width:64rem}}
-            @media (min-width:80rem){.container{max-width:80rem}}
-            @media (min-width:96rem){.container{max-width:96rem}}
-            .mx-auto{margin-inline:auto}
-            .my-2{margin-block:calc(var(--spacing) * 2)}
-            .mt-0\.5{margin-top:calc(var(--spacing) * .5)}
-            .mt-1{margin-top:var(--spacing)}
-            .mt-3{margin-top:calc(var(--spacing) * 3)}
-            .mb-1{margin-bottom:var(--spacing)}
-            .mb-3{margin-bottom:calc(var(--spacing) * 3)}
-            .mb-4{margin-bottom:calc(var(--spacing) * 4)}
-            .ml-1{margin-left:var(--spacing)}
-            .block{display:block}
-            .contents{display:contents}
-            .flex{display:flex}
-            .inline{display:inline}
-            .h-1\.5{height:calc(var(--spacing) * 1.5)}
-            .h-5{height:calc(var(--spacing) * 5)}
-            .h-8{height:calc(var(--spacing) * 8)}
-            .h-12{height:calc(var(--spacing) * 12)}
-            .h-44{height:calc(var(--spacing) * 44)}
-            .h-screen{height:100vh}
-            .min-h-\[120px\]{min-height:120px}
-            .w-1\.5{width:calc(var(--spacing) * 1.5)}
-            .w-8{width:calc(var(--spacing) * 8)}
-            .w-12{width:calc(var(--spacing) * 12)}
-            .w-full{width:100%}
-            .max-w-\[85\%\]{max-width:85%}
-            .max-w-md{max-width:var(--container-md)}
-            .flex-1{flex:1}
-            .shrink-0{flex-shrink:0}
-            .transform{transform:var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,)}
-            .animate-bounce{animation:var(--animate-bounce)}
-            .animate-pulse{animation:var(--animate-pulse)}
-            .cursor-pointer{cursor:pointer}
-            .snap-x{scroll-snap-type:x var(--tw-scroll-snap-strictness)}
-            .snap-mandatory{--tw-scroll-snap-strictness:mandatory}
-            .snap-center{scroll-snap-align:center}
-            .flex-col{flex-direction:column}
-            .items-center{align-items:center}
-            .items-start{align-items:flex-start}
-            .justify-between{justify-content:space-between}
-            .justify-center{justify-content:center}
-            .justify-end{justify-content:flex-end}
-            .gap-1{gap:var(--spacing)}
-            .gap-1\.5{gap:calc(var(--spacing) * 1.5)}
-            .gap-2{gap:calc(var(--spacing) * 2)}
-            :where(.space-y-3>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)))}
-            :where(.space-y-4>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)))}
-            :where(.space-y-6>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)))}
-            .truncate{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
-            .overflow-hidden{overflow:hidden}
-            .overflow-x-auto{overflow-x:auto}
-            .overflow-y-auto{overflow-y:auto}
-            .rounded-2xl{border-radius:var(--radius-2xl)}
-            .rounded-full{border-radius:3.40282e38px}
-            .rounded-lg{border-radius:var(--radius-lg)}
-            .rounded-xl{border-radius:var(--radius-xl)}
-            .rounded-tl-none{border-top-left-radius:0}
-            .rounded-tr-none{border-top-right-radius:0}
-            .border{border-style:var(--tw-border-style);border-width:1px}
-            .border-x{border-inline-style:var(--tw-border-style);border-inline-width:1px}
-            .border-t{border-top-style:var(--tw-border-style);border-top-width:1px}
-            .border-b{border-bottom-style:var(--tw-border-style);border-bottom-width:1px}
-            .border-none{--tw-border-style:none;border-style:none}
-            .border-slate-50{border-color:var(--color-slate-50)}
-            .border-slate-100{border-color:var(--color-slate-100)}
-            .border-slate-200{border-color:var(--color-slate-200)}
-            .border-slate-200\/60{border-color:#e2e8f099}
-            @supports (color:color-mix(in lab, red, red)){.border-slate-200\/60{border-color:color-mix(in oklab, var(--color-slate-200) 60%, transparent)}}
-            .bg-\[\#4A5D23\]{background-color:#4a5d23}
-            .bg-red-100{background-color:var(--color-red-100)}
-            .bg-slate-50{background-color:var(--color-slate-50)}
-            .bg-slate-50\/50{background-color:#f8fafc80}
-            @supports (color:color-mix(in lab, red, red)){.bg-slate-50\/50{background-color:color-mix(in oklab, var(--color-slate-50) 50%, transparent)}}
-            .bg-slate-100{background-color:var(--color-slate-100)}
-            .bg-slate-400{background-color:var(--color-slate-400)}
-            .bg-slate-900{background-color:var(--color-slate-900)}
-            .bg-white{background-color:var(--color-white)}
-            .bg-white\/90{background-color:#ffffffe6}
-            @supports (color:color-mix(in lab, red, red)){.bg-white\/90{background-color:color-mix(in oklab, var(--color-white) 90%, transparent)}}
-            .object-cover{object-fit:cover}
-            .p-3\.5{padding:calc(var(--spacing) * 3.5)}
-            .p-4{padding:calc(var(--spacing) * 4)}
-            .p-5{padding:calc(var(--spacing) * 5)}
-            .px-3{padding-inline:calc(var(--spacing) * 3)}
-            .px-4{padding-inline:calc(var(--spacing) * 4)}
-            .py-1{padding-block:var(--spacing)}
-            .py-1\.5{padding-block:calc(var(--spacing) * 1.5)}
-            .py-2{padding-block:calc(var(--spacing) * 2)}
-            .py-2\.5{padding-block:calc(var(--spacing) * 2.5)}
-            .py-3{padding-block:calc(var(--spacing) * 3)}
-            .py-3\.5{padding-block:calc(var(--spacing) * 3.5)}
-            .pt-2{padding-top:calc(var(--spacing) * 2)}
-            .pt-3{padding-top:calc(var(--spacing) * 3)}
-            .pb-1{padding-bottom:var(--spacing)}
-            .pb-2{padding-bottom:calc(var(--spacing) * 2)}
-            .font-sans{font-family:var(--font-sans)}
-            .text-lg{font-size:var(--text-lg);line-height:var(--tw-leading,var(--text-lg--line-height))}
-            .text-sm{font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height))}
-            .text-xs{font-size:var(--text-xs);line-height:var(--tw-leading,var(--text-xs--line-height))}
-            .text-\[10px\]{font-size:10px}
-            .text-\[11px\]{font-size:11px}
-            .leading-relaxed{--tw-leading:var(--leading-relaxed);line-height:var(--leading-relaxed)}
-            .font-bold{--tw-font-weight:var(--font-weight-bold);font-weight:var(--font-weight-bold)}
-            .font-medium{--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}
-            .font-semibold{--tw-font-weight:var(--font-weight-semibold);font-weight:var(--font-weight-semibold)}
-            .tracking-tight{--tw-tracking:var(--tracking-tight);letter-spacing:var(--tracking-tight)}
-            .tracking-wider{--tw-tracking:var(--tracking-wider);letter-spacing:var(--tracking-wider)}
-            .text-\[\#4A5D23\]{color:#4a5d23}
-            .text-amber-500{color:var(--color-amber-500)}
-            .text-red-600{color:var(--color-red-600)}
-            .text-slate-400{color:var(--color-slate-400)}
-            .text-slate-500{color:var(--color-slate-500)}
-            .text-slate-600{color:var(--color-slate-600)}
-            .text-slate-700{color:var(--color-slate-700)}
-            .text-slate-800{color:var(--color-slate-800)}
-            .text-slate-900{color:var(--color-slate-900)}
-            .text-white{color:var(--color-white)}
-            .uppercase{text-transform:uppercase}
-            .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-            .shadow-2xl{--tw-shadow:0 25px 50px -12px var(--tw-shadow-color,#00000040);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}
-            .shadow-\[0_-4px_12px_rgba\(0\,0\,0\,0\.02\)\]{--tw-shadow:0 -4px 12px var(--tw-shadow-color,#00000005);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}
-            .shadow-md{--tw-shadow:0 4px 6px -1px var(--tw-shadow-color,#0000001a), 0 2px 4px -2px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}
-            .shadow-sm{--tw-shadow:0 1px 3px 0 var(--tw-shadow-color,#0000001a), 0 1px 2px -1px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}
-            .ring{--tw-ring-shadow:var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color,currentcolor);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}
-            .outline{outline-style:var(--tw-outline-style);outline-width:1px}
-            .backdrop-blur-md{--tw-backdrop-blur:blur(var(--blur-md));-webkit-backdrop-filter:var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);backdrop-filter:var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,)}
-            .transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,-webkit-backdrop-filter,backdrop-filter,display,content-visibility,overlay,pointer-events;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}
-            .transition-all{transition-property:all;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}
-            @media (hover:hover){
-                .hover\:bg-\[\#3d4d1c\]:hover{background-color:#3d4d1c}
-                .hover\:bg-\[\#059669\]:hover{background-color:#059669}
-                .hover\:bg-\[\#4A5D23\]\/10:hover{background-color:oklab(44.8802% -.0493756 .0705636/.1)}
-                .hover\:bg-amber-50:hover{background-color:var(--color-amber-50)}
-                .hover\:bg-orange-50:hover{background-color:var(--color-orange-50)}
-                .hover\:bg-purple-50:hover{background-color:var(--color-purple-50)}
-                .hover\:bg-red-50:hover{background-color:var(--color-red-50)}
-                .hover\:bg-slate-200:hover{background-color:var(--color-slate-200)}
-                .hover\:text-\[\#4A5D23\]:hover{color:#4a5d23}
-                .hover\:text-amber-600:hover{color:var(--color-amber-600)}
-                .hover\:text-orange-600:hover{color:var(--color-orange-600)}
-                .hover\:text-purple-600:hover{color:var(--color-purple-600)}
-                .hover\:text-red-600:hover{color:var(--color-red-600)}
-                .hover\:underline:hover{text-decoration-line:underline}
-            }
-            .focus\:border-\[\#4A5D23\]:focus{border-color:#4a5d23}
-            .focus\:bg-white:focus{background-color:var(--color-white)}
-            .focus\:outline-none:focus{--tw-outline-style:none;outline-style:none}
-            .disabled\:cursor-not-allowed:disabled{cursor:not-allowed}
-            .disabled\:opacity-50:disabled{opacity:.5}
-        }
-        @property --tw-rotate-x{syntax:"*";inherits:false}
-        @property --tw-rotate-y{syntax:"*";inherits:false}
-        @property --tw-rotate-z{syntax:"*";inherits:false}
-        @property --tw-skew-x{syntax:"*";inherits:false}
-        @property --tw-skew-y{syntax:"*";inherits:false}
-        @property --tw-scroll-snap-strictness{syntax:"*";inherits:false;initial-value:proximity}
-        @property --tw-space-y-reverse{syntax:"*";inherits:false;initial-value:0}
-        @property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}
-        @property --tw-leading{syntax:"*";inherits:false}
-        @property --tw-font-weight{syntax:"*";inherits:false}
-        @property --tw-tracking{syntax:"*";inherits:false}
-        @property --tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
-        @property --tw-shadow-color{syntax:"*";inherits:false}
-        @property --tw-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}
-        @property --tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
-        @property --tw-inset-shadow-color{syntax:"*";inherits:false}
-        @property --tw-inset-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}
-        @property --tw-ring-color{syntax:"*";inherits:false}
-        @property --tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
-        @property --tw-inset-ring-color{syntax:"*";inherits:false}
-        @property --tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
-        @property --tw-ring-inset{syntax:"*";inherits:false}
-        @property --tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}
-        @property --tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}
-        @property --tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}
-        @property --tw-outline-style{syntax:"*";inherits:false;initial-value:solid}
-        @property --tw-backdrop-blur{syntax:"*";inherits:false}
-        @property --tw-backdrop-brightness{syntax:"*";inherits:false}
-        @property --tw-backdrop-contrast{syntax:"*";inherits:false}
-        @property --tw-backdrop-grayscale{syntax:"*";inherits:false}
-        @property --tw-backdrop-hue-rotate{syntax:"*";inherits:false}
-        @property --tw-backdrop-invert{syntax:"*";inherits:false}
-        @property --tw-backdrop-opacity{syntax:"*";inherits:false}
-        @property --tw-backdrop-saturate{syntax:"*";inherits:false}
-        @property --tw-backdrop-sepia{syntax:"*";inherits:false}
-        @keyframes pulse{50%{opacity:.5}}
-        @keyframes bounce{0%,to{animation-timing-function:cubic-bezier(.8,0,1,1);transform:translateY(-25%)}50%{animation-timing-function:cubic-bezier(0,0,.2,1);transform:none}}
-        
+        /* Στατικό, προ-μεταγλωττισμένο Tailwind CSS (Tailwind CLI v4.3.3) - αντί για το αργό runtime CDN script */
+/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,:before,:after,::backdrop{--tw-rotate-x:initial;--tw-rotate-y:initial;--tw-rotate-z:initial;--tw-skew-x:initial;--tw-skew-y:initial;--tw-scroll-snap-strictness:proximity;--tw-space-y-reverse:0;--tw-border-style:solid;--tw-leading:initial;--tw-font-weight:initial;--tw-tracking:initial;--tw-shadow:0 0 #0000;--tw-shadow-color:initial;--tw-shadow-alpha:100%;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-color:initial;--tw-inset-shadow-alpha:100%;--tw-ring-color:initial;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-color:initial;--tw-inset-ring-shadow:0 0 #0000;--tw-ring-inset:initial;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000;--tw-outline-style:solid;--tw-backdrop-blur:initial;--tw-backdrop-brightness:initial;--tw-backdrop-contrast:initial;--tw-backdrop-grayscale:initial;--tw-backdrop-hue-rotate:initial;--tw-backdrop-invert:initial;--tw-backdrop-opacity:initial;--tw-backdrop-saturate:initial;--tw-backdrop-sepia:initial}}}@layer theme{:root,:host{--font-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--color-red-50:oklch(97.1% .013 17.38);--color-red-100:oklch(93.6% .032 17.717);--color-red-600:oklch(57.7% .245 27.325);--color-orange-50:oklch(98% .016 73.684);--color-orange-600:oklch(64.6% .222 41.116);--color-amber-50:oklch(98.7% .022 95.277);--color-amber-500:oklch(76.9% .188 70.08);--color-amber-600:oklch(66.6% .179 58.318);--color-purple-50:oklch(97.7% .014 308.299);--color-purple-600:oklch(55.8% .288 302.321);--color-slate-50:oklch(98.4% .003 247.858);--color-slate-100:oklch(96.8% .007 247.896);--color-slate-200:oklch(92.9% .013 255.508);--color-slate-400:oklch(70.4% .04 256.788);--color-slate-500:oklch(55.4% .046 257.417);--color-slate-600:oklch(44.6% .043 257.281);--color-slate-700:oklch(37.2% .044 257.287);--color-slate-800:oklch(27.9% .041 260.031);--color-slate-900:oklch(20.8% .042 265.755);--color-white:#fff;--spacing:.25rem;--container-md:28rem;--text-xs:.75rem;--text-xs--line-height:calc(1 / .75);--text-sm:.875rem;--text-sm--line-height:calc(1.25 / .875);--text-lg:1.125rem;--text-lg--line-height:calc(1.75 / 1.125);--font-weight-medium:500;--font-weight-semibold:600;--font-weight-bold:700;--tracking-tight:-.025em;--tracking-wider:.05em;--leading-relaxed:1.625;--radius-lg:.5rem;--radius-xl:.75rem;--radius-2xl:1rem;--animate-pulse:pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;--animate-bounce:bounce 1s infinite;--blur-md:12px;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4, 0, .2, 1);--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--default-font-family,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring:where(:not(iframe)){outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::file-selector-button{appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer components;@layer utilities{.relative{position:relative}.sticky{position:sticky}.top-0{top:0}.z-10{z-index:10}.container{width:100%}@media (min-width:40rem){.container{max-width:40rem}}@media (min-width:48rem){.container{max-width:48rem}}@media (min-width:64rem){.container{max-width:64rem}}@media (min-width:80rem){.container{max-width:80rem}}@media (min-width:96rem){.container{max-width:96rem}}.mx-auto{margin-inline:auto}.my-2{margin-block:calc(var(--spacing) * 2)}.mt-0\.5{margin-top:calc(var(--spacing) * .5)}.mt-1{margin-top:var(--spacing)}.mt-3{margin-top:calc(var(--spacing) * 3)}.mb-1{margin-bottom:var(--spacing)}.mb-3{margin-bottom:calc(var(--spacing) * 3)}.mb-4{margin-bottom:calc(var(--spacing) * 4)}.ml-1{margin-left:var(--spacing)}.block{display:block}.contents{display:contents}.flex{display:flex}.inline{display:inline}.h-1\.5{height:calc(var(--spacing) * 1.5)}.h-5{height:calc(var(--spacing) * 5)}.h-8{height:calc(var(--spacing) * 8)}.h-12{height:calc(var(--spacing) * 12)}.h-44{height:calc(var(--spacing) * 44)}.h-screen{height:100vh}.min-h-\[120px\]{min-height:120px}.w-1\.5{width:calc(var(--spacing) * 1.5)}.w-8{width:calc(var(--spacing) * 8)}.w-12{width:calc(var(--spacing) * 12)}.w-full{width:100%}.max-w-\[85\%\]{max-width:85%}.max-w-md{max-width:var(--container-md)}.flex-1{flex:1}.shrink-0{flex-shrink:0}.transform{transform:var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,)}.animate-bounce{animation:var(--animate-bounce)}.animate-pulse{animation:var(--animate-pulse)}.cursor-pointer{cursor:pointer}.snap-x{scroll-snap-type:x var(--tw-scroll-snap-strictness)}.snap-mandatory{--tw-scroll-snap-strictness:mandatory}.snap-center{scroll-snap-align:center}.flex-col{flex-direction:column}.items-center{align-items:center}.items-start{align-items:flex-start}.justify-between{justify-content:space-between}.justify-center{justify-content:center}.justify-end{justify-content:flex-end}.gap-1{gap:var(--spacing)}.gap-1\.5{gap:calc(var(--spacing) * 1.5)}.gap-2{gap:calc(var(--spacing) * 2)}:where(.space-y-3>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)))}:where(.space-y-4>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)))}:where(.space-y-6>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)))}.truncate{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded-2xl{border-radius:var(--radius-2xl)}.rounded-full{border-radius:3.40282e38px}.rounded-lg{border-radius:var(--radius-lg)}.rounded-xl{border-radius:var(--radius-xl)}.rounded-tl-none{border-top-left-radius:0}.rounded-tr-none{border-top-right-radius:0}.border{border-style:var(--tw-border-style);border-width:1px}.border-x{border-inline-style:var(--tw-border-style);border-inline-width:1px}.border-t{border-top-style:var(--tw-border-style);border-top-width:1px}.border-b{border-bottom-style:var(--tw-border-style);border-bottom-width:1px}.border-none{--tw-border-style:none;border-style:none}.border-slate-50{border-color:var(--color-slate-50)}.border-slate-100{border-color:var(--color-slate-100)}.border-slate-200{border-color:var(--color-slate-200)}.border-slate-200\/60{border-color:#e2e8f099}@supports (color:color-mix(in lab, red, red)){.border-slate-200\/60{border-color:color-mix(in oklab, var(--color-slate-200) 60%, transparent)}}.bg-\[\#4A5D23\]{background-color:#4a5d23}.bg-red-100{background-color:var(--color-red-100)}.bg-slate-50{background-color:var(--color-slate-50)}.bg-slate-50\/50{background-color:#f8fafc80}@supports (color:color-mix(in lab, red, red)){.bg-slate-50\/50{background-color:color-mix(in oklab, var(--color-slate-50) 50%, transparent)}}.bg-slate-100{background-color:var(--color-slate-100)}.bg-slate-400{background-color:var(--color-slate-400)}.bg-slate-900{background-color:var(--color-slate-900)}.bg-white{background-color:var(--color-white)}.bg-white\/90{background-color:#ffffffe6}@supports (color:color-mix(in lab, red, red)){.bg-white\/90{background-color:color-mix(in oklab, var(--color-white) 90%, transparent)}}.object-cover{object-fit:cover}.p-3\.5{padding:calc(var(--spacing) * 3.5)}.p-4{padding:calc(var(--spacing) * 4)}.p-5{padding:calc(var(--spacing) * 5)}.px-3{padding-inline:calc(var(--spacing) * 3)}.px-4{padding-inline:calc(var(--spacing) * 4)}.py-1{padding-block:var(--spacing)}.py-1\.5{padding-block:calc(var(--spacing) * 1.5)}.py-2{padding-block:calc(var(--spacing) * 2)}.py-3{padding-block:calc(var(--spacing) * 3)}.py-3\.5{padding-block:calc(var(--spacing) * 3.5)}.pt-2{padding-top:calc(var(--spacing) * 2)}.pt-3{padding-top:calc(var(--spacing) * 3)}.pb-1{padding-bottom:var(--spacing)}.pb-2{padding-bottom:calc(var(--spacing) * 2)}.font-sans{font-family:var(--font-sans)}.text-lg{font-size:var(--text-lg);line-height:var(--tw-leading,var(--text-lg--line-height))}.text-sm{font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height))}.text-xs{font-size:var(--text-xs);line-height:var(--tw-leading,var(--text-xs--line-height))}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.leading-relaxed{--tw-leading:var(--leading-relaxed);line-height:var(--leading-relaxed)}.font-bold{--tw-font-weight:var(--font-weight-bold);font-weight:var(--font-weight-bold)}.font-medium{--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}.font-semibold{--tw-font-weight:var(--font-weight-semibold);font-weight:var(--font-weight-semibold)}.tracking-tight{--tw-tracking:var(--tracking-tight);letter-spacing:var(--tracking-tight)}.tracking-wider{--tw-tracking:var(--tracking-wider);letter-spacing:var(--tracking-wider)}.text-\[\#4A5D23\]{color:#4a5d23}.text-amber-500{color:var(--color-amber-500)}.text-red-600{color:var(--color-red-600)}.text-slate-400{color:var(--color-slate-400)}.text-slate-500{color:var(--color-slate-500)}.text-slate-600{color:var(--color-slate-600)}.text-slate-700{color:var(--color-slate-700)}.text-slate-800{color:var(--color-slate-800)}.text-slate-900{color:var(--color-slate-900)}.text-white{color:var(--color-white)}.uppercase{text-transform:uppercase}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px var(--tw-shadow-color,#00000040);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.shadow-\[0_-4px_12px_rgba\(0\,0\,0\,0\.02\)\]{--tw-shadow:0 -4px 12px var(--tw-shadow-color,#00000005);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px var(--tw-shadow-color,#0000001a), 0 2px 4px -2px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 3px 0 var(--tw-shadow-color,#0000001a), 0 1px 2px -1px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.ring{--tw-ring-shadow:var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color,currentcolor);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.outline{outline-style:var(--tw-outline-style);outline-width:1px}.backdrop-blur-md{--tw-backdrop-blur:blur(var(--blur-md));-webkit-backdrop-filter:var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);backdrop-filter:var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,)}.transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,-webkit-backdrop-filter,backdrop-filter,display,content-visibility,overlay,pointer-events;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-all{transition-property:all;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}@media (hover:hover){.hover\:bg-\[\#3d4d1c\]:hover{background-color:#3d4d1c}.hover\:bg-\[\#4A5D23\]\/10:hover{background-color:oklab(44.8802% -.0493756 .0705636/.1)}.hover\:bg-amber-50:hover{background-color:var(--color-amber-50)}.hover\:bg-orange-50:hover{background-color:var(--color-orange-50)}.hover\:bg-purple-50:hover{background-color:var(--color-purple-50)}.hover\:bg-red-50:hover{background-color:var(--color-red-50)}.hover\:bg-slate-200:hover{background-color:var(--color-slate-200)}.hover\:text-\[\#4A5D23\]:hover{color:#4a5d23}.hover\:text-amber-600:hover{color:var(--color-amber-600)}.hover\:text-orange-600:hover{color:var(--color-orange-600)}.hover\:text-purple-600:hover{color:var(--color-purple-600)}.hover\:text-red-600:hover{color:var(--color-red-600)}.hover\:underline:hover{text-decoration-line:underline}}.focus\:border-\[\#4A5D23\]:focus{border-color:#4a5d23}.focus\:bg-white:focus{background-color:var(--color-white)}.focus\:outline-none:focus{--tw-outline-style:none;outline-style:none}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:opacity-50:disabled{opacity:.5}}@property --tw-rotate-x{syntax:"*";inherits:false}@property --tw-rotate-y{syntax:"*";inherits:false}@property --tw-rotate-z{syntax:"*";inherits:false}@property --tw-skew-x{syntax:"*";inherits:false}@property --tw-skew-y{syntax:"*";inherits:false}@property --tw-scroll-snap-strictness{syntax:"*";inherits:false;initial-value:proximity}@property --tw-space-y-reverse{syntax:"*";inherits:false;initial-value:0}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-leading{syntax:"*";inherits:false}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-tracking{syntax:"*";inherits:false}@property --tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:"*";inherits:false}@property --tw-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:"*";inherits:false}@property --tw-inset-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-ring-color{syntax:"*";inherits:false}@property --tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:"*";inherits:false}@property --tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:"*";inherits:false}@property --tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-outline-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-backdrop-blur{syntax:"*";inherits:false}@property --tw-backdrop-brightness{syntax:"*";inherits:false}@property --tw-backdrop-contrast{syntax:"*";inherits:false}@property --tw-backdrop-grayscale{syntax:"*";inherits:false}@property --tw-backdrop-hue-rotate{syntax:"*";inherits:false}@property --tw-backdrop-invert{syntax:"*";inherits:false}@property --tw-backdrop-opacity{syntax:"*";inherits:false}@property --tw-backdrop-saturate{syntax:"*";inherits:false}@property --tw-backdrop-sepia{syntax:"*";inherits:false}@keyframes pulse{50%{opacity:.5}}@keyframes bounce{0%,to{animation-timing-function:cubic-bezier(.8,0,1,1);transform:translateY(-25%)}50%{animation-timing-function:cubic-bezier(0,0,.2,1);transform:none}}
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .fade-in-img { animation: fadeIn 0.4s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        /* Σεβασμός σε χρήστες που προτιμούν λιγότερη κίνηση στην οθόνη */
         @media (prefers-reduced-motion: reduce) {
             .fade-in-img { animation: none; }
             .animate-bounce { animation: none; }
             .animate-pulse { animation: none; }
         }
+        /* Ορατό focus ring για πληκτρολόγιο/accessibility */
         button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible {
             outline: 2px solid #4A5D23;
             outline-offset: 2px;
@@ -315,6 +34,9 @@
         .typing-dot:nth-child(2) { animation-delay: 0.15s; }
         .typing-dot:nth-child(3) { animation-delay: 0.3s; }
         @keyframes typingBounce { 0%, 60%, 100% { transform: translateY(0); opacity: .5; } 30% { transform: translateY(-4px); opacity: 1; } }
+        /* Αξιόπιστο οριζόντιο swipe στις εικόνες, ειδικά σε iOS: χωρίς αυτό, μια οριζόντια
+           λωρίδα μέσα σε κάθετα scrollable περιοχή μπερδεύεται συχνά με το κάθετο scroll
+           της σελίδας και το swipe "δεν πιάνει". */
         .place-image-scroll {
             -webkit-overflow-scrolling: touch;
             touch-action: pan-x;
@@ -324,11 +46,9 @@
 </head>
 <body class="bg-slate-900 text-slate-900 font-sans antialiased">
     <div class="max-w-md mx-auto h-screen bg-white shadow-2xl flex flex-col justify-between overflow-hidden relative border-x border-slate-100">
-        
-        <!-- HEADER -->
         <header class="p-4 border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 flex justify-between items-center shrink-0 shadow-sm">
             <div>
-                <h1 class="text-lg font-bold tracking-tight text-slate-800">Afroditi Guest House</h1>
+                <h1 class="text-lg font-bold tracking-tight text-slate-800">Λόφος Επισκοπής</h1>
                 <p id="ui-subtitle" class="text-[11px] font-medium text-[#4A5D23]">● AI Concierge Live</p>
             </div>
             <select id="lang-select" aria-label="Επιλογή γλώσσας / Select language" class="bg-slate-100 text-slate-700 text-xs font-bold py-2 px-3 rounded-xl border-none focus:outline-none cursor-pointer">
@@ -343,41 +63,24 @@
                 <option value="ru">🇷🇺 Русский</option>
             </select>
         </header>
-
-        <!-- MAIN CONTAINER -->
-        <main class="flex-1 overflow-y-auto p-5 space-y-5 bg-slate-50/50">
-            
-            <!-- 📍 ΜΙΚΡΟ ΟΡΙΖΟΝΤΙΟ ΠΛΑΙΣΙΟ / ΜΠΟΥΤΟΝ GPS ΠΛΟΗΓΗΣΗΣ -->
-            <a id="btn-navigate" href="#" target="_blank" class="w-full bg-[#10b981] hover:bg-[#059669] text-white py-2.5 px-4 rounded-xl font-semibold transition shadow-sm flex justify-between items-center text-xs shrink-0">
-                <span class="flex items-center gap-1.5 font-bold">
-                    📍 <span id="ui-gps-btn">Οδηγίες Πρόσβασης (GPS)</span>
-                </span>
-                <span class="text-[10px] bg-white/20 px-2 py-0.5 rounded-md uppercase font-bold tracking-wider">Navigate ➔</span>
-            </a>
-
-            <!-- ΠΡΟΤΕΙΝΟΜΕΝΕΣ ΕΜΠΕΙΡΙΕΣ -->
+        <main class="flex-1 overflow-y-auto p-5 space-y-6 bg-slate-50/50">
             <div>
-                <h3 id="ui-section-places" class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Προτεινόμενες Εμπειρίες</h3>
-                <div id="places-container" class="space-y-4"></div>
+                <h3 id="ui-section-places" class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Προτεινόμενες Εμπειρίες</h3>
+                <div id="places-container" class="space-y-4">
+                    </div>
             </div>
-
-            <!-- WHATSAPP CONTACT BUTTON -->
-            <div class="pt-1">
-                <a id="whatsapp-btn" href="https://wa.me/306936362169?text=Hi!%20I%20am%20a%20guest%20at%20Afroditi%20Guest%20House." target="_blank" rel="noopener" aria-label="Επικοινωνία μέσω WhatsApp" class="w-full bg-[#4A5D23] text-white py-3.5 rounded-xl font-semibold hover:bg-[#3d4d1c] transition shadow-md flex justify-center items-center gap-1.5 text-xs">
-                    💬 <span id="ui-whatsapp-text">WhatsApp Direct</span>
+            <div class="pt-2">
+                <a id="whatsapp-btn" href="https://wa.me/306936362169?text=Hi!%20I%20am%20a%20guest%20at%20Lofos%20Episkopis." target="_blank" rel="noopener" aria-label="Επικοινωνία μέσω WhatsApp" class="w-full bg-[#4A5D23] text-white py-3.5 rounded-xl font-semibold hover:bg-[#3d4d1c] transition shadow-md flex justify-center items-center gap-1.5 text-xs">
+                    💬 <span id="ui-whatsapp-text">WhatsApp</span>
                 </a>
             </div>
-
-            <hr class="border-slate-200/60 my-1">
-
-            <!-- LIVE CHAT SECTION -->
+            <hr class="border-slate-200/60 my-2">
             <div>
                 <h3 id="ui-section-chat" class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Live Chat</h3>
-                <div id="chat-box" class="space-y-3 min-h-[120px]" role="log" aria-live="polite"></div>
+                <div id="chat-box" class="space-y-3 min-h-[120px]" role="log" aria-live="polite">
+                    </div>
             </div>
         </main>
-
-        <!-- FOOTER & INPUTS -->
         <footer class="p-4 border-t border-slate-100 bg-white shrink-0 shadow-[0_-4px_12px_rgba(0,0,0,0.02)] space-y-3">
             <div class="flex gap-2 overflow-x-auto no-scrollbar pb-1">
                 <button onclick="triggerQuickAction('weather')" class="shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-[#4A5D23]/10 text-slate-700 hover:text-[#4A5D23] rounded-lg text-xs font-bold transition shadow-sm" id="btn-tag-weather">🌤️ Καιρός</button>
@@ -396,38 +99,27 @@
             </div>
         </footer>
     </div>
-
-    <!-- JAVASCRIPT CONCIERGE LOGIC -->
     <script>
         const propertyCoords = { lat: 39.37548142766103, lng: 22.98088799656946 };
-        
-        // 📍 ΑΥΤΟΜΑΤΗ ΡΥΘΜΙΣΗ ΣΥΝΔΕΣΜΟΥ ΠΛΟΗΓΗΣΗΣ (GPS)
-        function setupNavigationLink() {
-            const navBtn = document.getElementById('btn-navigate');
-            if (!navBtn) return;
-            const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-            navBtn.href = isIOSDevice 
-                ? `http://maps.apple.com/?daddr=${propertyCoords.lat},${propertyCoords.lng}`
-                : `https://www.google.com/maps/dir/?api=1&destination=${propertyCoords.lat},${propertyCoords.lng}`;
-        }
-        document.addEventListener('DOMContentLoaded', setupNavigationLink);
-
+        // Ανίχνευση iOS (iPhone/iPad/iPod, συμπεριλαμβανομένου του iPadOS που δηλώνει "MacIntel")
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
         let currentLang = 'el';
         let liveTemperature = "24";
-
+        // 🚀 ΑΣΦΑΛΕΣ RENDERING ΚΕΙΜΕΝΟΥ (αποτροπή XSS από είσοδο χρήστη)
         function escapeHtml(str) {
             const div = document.createElement('div');
             div.textContent = str;
             return div.innerHTML;
         }
-
+        // 🚀 ΜΗΧΑΝΙΣΜΟΣ ΞΕΚΛΕΙΔΩΜΑΤΟΣ ΗΧΟΥ ΓΙΑ ΚΙΝΗΤΑ
+        // ΣΗΜΑΝΤΙΚΟ: σε mobile (κυρίως iOS Safari) ένα Audio() ΧΩΡΙΣ src δεν "ξεκλειδώνει" ποτέ πραγματικά
+        // την αναπαραγωγή ήχου εκτός χειρονομίας χρήστη - το play() αποτυγχάνει αθόρυβα γιατί δεν υπάρχει
+        // πραγματικό περιεχόμενο. Γι' αυτό χρησιμοποιούμε ένα πολύ μικρό, πραγματικό σιωπηλό mp3 (0.2s).
         const SILENT_AUDIO_SRC = "data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA/+M4wAAAAAAAAAAAAEluZm8AAAAPAAAAAwAAAbAAqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV////////////////////////////////////////////AAAAAExhdmM2MC4zMQAAAAAAAAAAAAAAACQC8AAAAAAAAAGw9wruFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+MYxAAAAANIAAAAAExBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV/+MYxDsAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV/+MYxHYAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
         let sharedAudio = new Audio();
-        sharedAudio.playsInline = true;
+        sharedAudio.playsInline = true; // αποτρέπει πλήρους οθόνης video player σε iOS
         sharedAudio.preload = "auto";
         let speechUnlocked = false;
-
         function unlockSpeech() {
             if (speechUnlocked) return;
             try {
@@ -435,25 +127,28 @@
                 sharedAudio.load();
                 const p = sharedAudio.play();
                 if (p !== undefined) {
-                    p.then(() => { speechUnlocked = true; }).catch(() => {});
+                    // ΣΗΜΑΝΤΙΚΟ: το "ξεκλειδώθηκε" σημειώνεται ΜΟΝΟ σε πραγματική επιτυχία.
+                    // Αν αποτύχει (π.χ. σε ένα ασταθές πρώτο touchstart), ΔΕΝ κλειδώνουμε
+                    // τη σημαία - θα ξαναδοκιμάσει στην επόμενη χειρονομία (χωρίς { once:true }).
+                    p.then(() => { speechUnlocked = true; }).catch(() => { /* θα ξαναδοκιμάσει στην επόμενη χειρονομία */ });
                 } else {
                     speechUnlocked = true;
                 }
-            } catch (e) {}
-
+            } catch (e) { /* θα ξαναδοκιμάσει στην επόμενη χειρονομία */ }
             if ('speechSynthesis' in window) {
                 try {
+                    // Μη-κενό κείμενο στο priming utterance: κάποιες εκδόσεις iOS Safari αγνοούν
+                    // εντελώς τα κενά utterances και δεν "ξεκλειδώνουν" πραγματικά το speechSynthesis.
                     const u = new SpeechSynthesisUtterance(' ');
                     u.volume = 0;
                     window.speechSynthesis.speak(u);
-                } catch (e) {}
+                } catch (e) { /* no-op */ }
             }
         }
-
         document.addEventListener('click', unlockSpeech);
         document.addEventListener('touchend', unlockSpeech);
         document.addEventListener('touchstart', unlockSpeech);
-
+        // 🚀 ΚΑΤΑΛΟΓΟΣ ΦΩΝΩΝ ΤΟΥ BROWSER (για το fallback TTS)
         let cachedVoices = [];
         function cacheVoices() {
             if ('speechSynthesis' in window) cachedVoices = window.speechSynthesis.getVoices();
@@ -462,17 +157,17 @@
             cacheVoices();
             window.speechSynthesis.onvoiceschanged = cacheVoices;
         }
-
         function getBestVoice(langCode) {
             const matches = cachedVoices.filter(v => v.lang.toLowerCase().startsWith(langCode));
             if (!matches.length) return null;
+            // Προτεραιότητα: γυναικεία + φυσική φωνή -> γυναικεία -> φυσική -> google -> ό,τι υπάρχει
             return matches.find(v => /female|woman/i.test(v.name) && /neural|natural|online|premium|enhanced/i.test(v.name))
                 || matches.find(v => /female|woman/i.test(v.name))
                 || matches.find(v => /neural|natural|online|premium|enhanced/i.test(v.name))
                 || matches.find(v => /google/i.test(v.name))
                 || matches[0];
         }
-
+        // 🚀 ΑΝΑΚΤΗΣΗ ΚΑΙΡΟΥ (με περιοδική ανανέωση)
         async function fetchLiveWeather() {
             try {
                 const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${propertyCoords.lat}&longitude=${propertyCoords.lng}&current=temperature_2m`);
@@ -481,550 +176,883 @@
                     liveTemperature = Math.round(data.current.temperature_2m);
                 }
             } catch (err) {
-                console.error("Weather fetch failed:", err);
+                console.error(err);
             }
         }
-
-        const uiTranslations = {
+        // 🚀 ΜΕΤΑΦΡΑΣΕΙΣ ΓΙΑ ΤΟ DROPDOWN
+        const langMenuTexts = {
+            el: { el: "🇬🇷 Ελληνικά", en: "🇬🇧 English", fr: "🇫🇷 Français", de: "🇩🇪 Deutsch", es: "🇪🇸 Español", it: "🇮🇹 Italiano", zh: "🇨🇳 中文", ja: "🇯🇵 日本語", ru: "🇷🇺 Русский" },
+            en: { el: "🇬🇷 Greek", en: "🇬🇧 English", fr: "🇫🇷 French", de: "🇩🇪 German", es: "🇪🇸 Spanish", it: "🇮🇹 Italian", zh: "🇨🇳 Chinese", ja: "🇯🇵 Japanese", ru: "🇷🇺 Russian" },
+            fr: { el: "🇬🇷 Grec", en: "🇬🇧 Anglais", fr: "🇫🇷 Français", de: "🇩🇪 Allemand", es: "🇪🇸 Espagnol", it: "🇮🇹 Italien", zh: "🇨🇳 Chinois", ja: "🇯🇵 Japonais", ru: "🇷🇺 Russe" },
+            de: { el: "🇬🇷 Griechisch", en: "🇬🇧 Englisch", fr: "🇫🇷 Französisch", de: "🇩🇪 Deutsch", es: "🇪🇸 Spanisch", it: "🇮🇹 Italienisch", zh: "🇨🇳 Chinesisch", ja: "🇯🇵 Japanisch", ru: "🇷🇺 Russisch" },
+            es: { el: "🇬🇷 Griego", en: "🇬🇧 Inglés", fr: "🇫🇷 Francés", de: "🇩🇪 Alemán", es: "🇪🇸 Español", it: "🇮🇹 Italiano", zh: "🇨🇳 Chino", ja: "🇯🇵 Japonés", ru: "🇷🇺 Ruso" },
+            it: { el: "🇬🇷 Greco", en: "🇬🇧 Inglese", fr: "🇫🇷 Francese", de: "🇩🇪 Tedesco", es: "🇪🇸 Spagnolo", it: "🇮🇹 Italiano", zh: "🇨🇳 Cinese", ja: "🇯🇵 Giapponese", ru: "🇷🇺 Russo" },
+            zh: { el: "🇬🇷 希腊语", en: "🇬🇧 英语", fr: "🇫🇷 法语", de: "🇩🇪 德语", es: "🇪🇸 西班牙语", it: "🇮🇹 意大利语", zh: "🇨🇳 中文", ja: "🇯🇵 日语", ru: "🇷🇺 俄语" },
+            ja: { el: "🇬🇷 ギリシャ語", en: "🇬🇧 英語", fr: "🇫🇷 フランス語", de: "🇩🇪 ドイツ語", es: "🇪🇸 スペイン語", it: "🇮🇹 イタリア語", zh: "🇨🇳 中国語", ja: "🇯🇵 日本語", ru: "🇷🇺 ロシア語" },
+            ru: { el: "🇬🇷 Греческий", en: "🇬🇧 Английский", fr: "🇫🇷 Французский", de: "🇩🇪 Немецкий", es: "🇪🇸 Испанский", it: "🇮🇹 Итальянский", zh: "🇨🇳 Китайский", ja: "🇯🇵 Японский", ru: "🇷🇺 Русский" }
+        };
+        // 🚀 ΠΡΟΤΕΙΝΟΜΕΝΑ ΜΕΡΗ
+        // distKm / timeMin: ΧΕΙΡΟΚΙΝΗΤΑ, βασισμένα σε πραγματικές οδικές διαδρομές (όχι ευθεία απόσταση × συντελεστή).
+        // Το κατάλυμα βρίσκεται στην Επισκοπή Άνω Βόλου, ~5ο χλμ. της διαδρομής Βόλου-Πορταριάς, υψόμετρο ~140μ.
+        // title / desc: ΠΛΗΡΩΣ μεταφρασμένα σε όλες τις 9 γλώσσες (βλ. resolvePlace παρακάτω).
+        const placesData = {
+    food: [
+        { lat: 39.3601, lng: 22.9465, distKm: 5.5, timeMin: 12, rating: "⭐ 4.7", url: "https://maps.google.com/?q=Mezen+Volos", image: "mezen.jpg",
+          title: { el: "1. Τσιπουράδικα Βόλου (Μεζέν)", en: "1. Mezen Tsipouro Tavern (Volos)", fr: "1. Taverne à tsipouro Mezen (Volos)", de: "1. Tsipouro-Taverne Mezen (Volos)", es: "1. Taberna de tsipouro Mezen (Volos)", it: "1. Taverna di tsipouro Mezen (Volos)", zh: "1. Mezen 齐普罗酒馆（沃洛斯）", ja: "1. メゼン ツィプロ酒場（ヴォロス）", ru: "1. Таверна ципуро Мезен (Волос)" },
+          desc: { el: "Θαλασσινοί μεζέδες και τσίπουρο.", en: "Seafood meze and tsipouro.", fr: "Mezze de fruits de mer et tsipouro.", de: "Meeresfrüchte-Mezze und Tsipouro.", es: "Meze de marisco y tsipouro.", it: "Meze di mare e tsipouro.", zh: "海鲜小菜与齐普罗酒。", ja: "シーフードのメゼとツィプロ。", ru: "Морские мезе и ципуро." } },
+        { lat: 39.3751, lng: 22.9320, distKm: 6.5, timeMin: 13, rating: "⭐ 4.8", url: "https://maps.google.com/?q=Demiris+Volos", image: "demiris.jpg",
+          title: { el: "2. Ουζερί Δεμίρης (Νέα Ιωνία)", en: "2. Demiris Ouzeri (Nea Ionia)", fr: "2. Ouzeri Demiris (Nea Ionia)", de: "2. Ouzeri Demiris (Nea Ionia)", es: "2. Ouzerí Demiris (Nea Ionia)", it: "2. Ouzerì Demiris (Nea Ionia)", zh: "2. Demiris 欧祖里酒馆（新约尼亚）", ja: "2. デミリス ウゼリ（ネア・イオニア）", ru: "2. Узери Демирис (Неа Иония)" },
+          desc: { el: "Ιστορικό ουζερί με ποιότητα.", en: "Historic ouzeri with quality food.", fr: "Ouzeri historique et de qualité.", de: "Traditionsreiches Ouzeri mit Qualität.", es: "Ouzerí histórico y de calidad.", it: "Ouzerì storico e di qualità.", zh: "历史悠久、品质出众的欧祖里酒馆。", ja: "歴史ある高品質なウゼリ。", ru: "Историческое узери с качественной кухней." } },
+        { lat: 39.3635, lng: 22.9410, distKm: 6.0, timeMin: 12, rating: "⭐ 4.6", url: "https://maps.google.com/?q=Kavouras+Volos", image: "kavouras.jpg",
+          title: { el: "3. Ο Κάβουρας (Κέντρο)", en: "3. O Kavouras (City Center)", fr: "3. O Kavouras (Centre-ville)", de: "3. O Kavouras (Stadtzentrum)", es: "3. O Kavouras (Centro)", it: "3. O Kavouras (Centro)", zh: "3. O Kavouras（市中心）", ja: "3. オ・カヴーラス（中心部）", ru: "3. О Кавурас (Центр)" },
+          desc: { el: "Παραδοσιακό στην καρδιά της πόλης.", en: "Traditional taverna in the heart of the city.", fr: "Taverne traditionnelle au cœur de la ville.", de: "Traditionelle Taverne im Herzen der Stadt.", es: "Taberna tradicional en el corazón de la ciudad.", it: "Taverna tradizionale nel cuore della città.", zh: "位于市中心的传统餐馆。", ja: "街の中心にある伝統的な店。", ru: "Традиционная таверна в центре города." } },
+        { lat: 39.3690, lng: 22.9250, distKm: 7.5, timeMin: 15, rating: "⭐ 4.7", url: "https://maps.google.com/?q=To+Filaraki+Volos", image: "tofilaraki.jpg",
+          title: { el: "4. Το Φιλαράκι", en: "4. To Filaraki", fr: "4. To Filaraki", de: "4. To Filaraki", es: "4. To Filaraki", it: "4. To Filaraki", zh: "4. To Filaraki", ja: "4. ト・フィララキ", ru: "4. То Филараки" },
+          desc: { el: "Αυθεντικό στέκι ντόπιων.", en: "Authentic local favorite.", fr: "Adresse authentique appréciée des habitants.", de: "Authentischer Treffpunkt der Einheimischen.", es: "Auténtico local favorito de los lugareños.", it: "Autentico ritrovo dei locali.", zh: "当地人喜爱的地道小馆。", ja: "地元で人気の本格的な店。", ru: "Аутентичное место, любимое местными." } },
+        { lat: 39.3650, lng: 22.9340, distKm: 6.5, timeMin: 13, rating: "⭐ 4.8", url: "https://maps.google.com/?q=Iodio+Volos", image: "iodion.jpg",
+          title: { el: "5. Ιώδιο (Παλαιά)", en: "5. Iodio (Old Town)", fr: "5. Iodio (Vieille ville)", de: "5. Iodio (Altstadt)", es: "5. Iodio (Casco antiguo)", it: "5. Iodio (Città vecchia)", zh: "5. Iodio（老城区）", ja: "5. イオディオ（旧市街）", ru: "5. Иодио (Старый город)" },
+          desc: { el: "Premium, μοντέρνοι θαλασσινοί μεζέδες.", en: "Premium, modern seafood meze.", fr: "Mezze de fruits de mer modernes et raffinés.", de: "Moderne, hochwertige Meeresfrüchte-Mezze.", es: "Meze de marisco moderno y premium.", it: "Meze di mare moderni e raffinati.", zh: "高级现代海鲜小菜。", ja: "モダンで上質なシーフードメゼ。", ru: "Премиальные современные морские мезе." } },
+        { lat: 39.3615, lng: 22.9445, distKm: 5.5, timeMin: 11, rating: "⭐ 4.5", url: "https://maps.google.com/?q=Papadis+Volos", image: "papadis.jpg",
+          title: { el: "6. Γιώργος-Παπαδής (Λιμάνι)", en: "6. Giorgos-Papadis (Port)", fr: "6. Giorgos-Papadis (Port)", de: "6. Giorgos-Papadis (Hafen)", es: "6. Giorgos-Papadis (Puerto)", it: "6. Giorgos-Papadis (Porto)", zh: "6. Giorgos-Papadis（港口）", ja: "6. ヨルゴス・パパディス（港）", ru: "6. Йоргос-Пападис (Порт)" },
+          desc: { el: "Εξαιρετική ψαροταβέρνα στο λιμάνι.", en: "Excellent fish taverna by the port.", fr: "Excellente taverne de poisson près du port.", de: "Ausgezeichnete Fischtaverne am Hafen.", es: "Excelente taberna de pescado junto al puerto.", it: "Ottima taverna di pesce vicino al porto.", zh: "港口附近的优质海鲜餐馆。", ja: "港近くの素晴らしいシーフード料理店。", ru: "Отличная рыбная таверна у порта." } },
+        { lat: 39.3915, lng: 22.9990, distKm: 7, timeMin: 13, rating: "⭐ 4.7", url: "https://www.google.com/maps/search/?api=1&query=Kritsa+Portaria", image: "kritsa.jpg",
+          title: { el: "7. Εστιατόριο Κρίτσα (Πορταριά)", en: "7. Kritsa Restaurant (Portaria)", fr: "7. Restaurant Kritsa (Portaria)", de: "7. Restaurant Kritsa (Portaria)", es: "7. Restaurante Kritsa (Portaria)", it: "7. Ristorante Kritsa (Portaria)", zh: "7. Kritsa 餐厅（波尔塔里亚）", ja: "7. クリツァ・レストラン（ポルタリア）", ru: "7. Ресторан Крица (Портария)" },
+          desc: { el: "Παραδοσιακή κουζίνα στην Πορταριά.", en: "Traditional cuisine in Portaria.", fr: "Cuisine traditionnelle à Portaria.", de: "Traditionelle Küche in Portaria.", es: "Cocina tradicional en Portaria.", it: "Cucina tradizionale a Portaria.", zh: "波尔塔里亚的传统美食。", ja: "ポルタリアの伝統料理。", ru: "Традиционная кухня в Портарии." } },
+        { lat: 39.3790, lng: 22.9910, distKm: 4.6, timeMin: 10, rating: "⭐ 4.6", url: "https://www.google.com/maps/search/?api=1&query=Oryansies+Katichori", image: "ortansies.jpg",
+          title: { el: "8. Ταβέρνα Ορτανσίες (Κατηχώρι)", en: "8. Ortansies Tavern (Katichori)", fr: "8. Taverne Ortansies (Katichori)", de: "8. Taverne Ortansies (Katichori)", es: "8. Taberna Ortansies (Katichori)", it: "8. Taverna Ortansies (Katichori)", zh: "8. Ortansies 餐馆（卡蒂霍里）", ja: "8. オルタンシエス（カティホリ）", ru: "8. Таверна Ортансиес (Катихори)" },
+          desc: { el: "Καταπληκτική θέα και γεύσεις.", en: "Amazing view and flavors.", fr: "Vue superbe et saveurs délicieuses.", de: "Fantastischer Blick und Aromen.", es: "Vistas increíbles y gran sabor.", it: "Vista straordinaria e ottimi sapori.", zh: "绝美景色与美味佳肴。", ja: "素晴らしい景色と味。", ru: "Потрясающий вид и вкус." } },
+        { lat: 39.3780, lng: 22.9920, distKm: 11, timeMin: 17, rating: "⭐ 4.5", url: "https://www.google.com/maps/search/?api=1&query=Katofli+tis+Kaitis+Katichori", image: "kaitis.jpg",
+          title: { el: "9. Το Κατώφλι της Καίτης", en: "9. To Katofli tis Kaitis", fr: "9. To Katofli tis Kaitis", de: "9. To Katofli tis Kaitis", es: "9. To Katofli tis Kaitis", it: "9. To Katofli tis Kaitis", zh: "9. To Katofli tis Kaitis", ja: "9. ト・カトフリ・ティス・ケティス", ru: "9. То Катофли тис Кэтис" },
+          desc: { el: "Παραδοσιακό στο Κατηχώρι.", en: "Traditional taverna in Katichori.", fr: "Taverne traditionnelle à Katichori.", de: "Traditionelle Taverne in Katichori.", es: "Taberna tradicional en Katichori.", it: "Taverna tradizionale a Katichori.", zh: "卡蒂霍里的传统餐馆。", ja: "カティホリの伝統的な店。", ru: "Традиционная таверна в Катихори." } },
+        { lat: 39.3530, lng: 23.0330, distKm: 10, timeMin: 15, rating: "⭐ 4.4", url: "https://www.google.com/maps/search/?api=1&query=Taverna+tou+Thoma+Agria", image: "thomass.jpg",
+          title: { el: "10. Ταβέρνα του Θωμά (Αγριά)", en: "10. Taverna tou Thoma (Agria)", fr: "10. Taverne tou Thoma (Agria)", de: "10. Taverna tou Thoma (Agria)", es: "10. Taverna tou Thoma (Agria)", it: "10. Taverna tou Thoma (Agria)", zh: "10. Taverna tou Thoma（阿格里亚）", ja: "10. タヴェルナ・トゥ・トマ（アグリア）", ru: "10. Таверна ту Тома (Агрия)" },
+          desc: { el: "Γνωστή ψαροταβέρνα στην Αγριά.", en: "Well-known fish taverna in Agria.", fr: "Taverne de poisson réputée à Agria.", de: "Bekannte Fischtaverne in Agria.", es: "Conocida taberna de pescado en Agria.", it: "Nota taverna di pesce ad Agria.", zh: "阿格里亚知名的海鲜餐馆。", ja: "アグリアで有名なシーフード料理店。", ru: "Известная рыбная таверна в Агрии." } },
+        { lat: 39.4015, lng: 22.9030, distKm: 12, timeMin: 24, rating: "⭐ 4.3", url: "https://www.google.com/maps/search/?api=1&query=Ippokampos+Alykes+Volos", image: "ippokampos.jpg",
+          title: { el: "11. Ιππόκαμπος (Αλυκές)", en: "11. Ippokampos (Alykes)", fr: "11. Ippokampos (Alykes)", de: "11. Ippokampos (Alykes)", es: "11. Ippokampos (Alykes)", it: "11. Ippokampos (Alykes)", zh: "11. Ippokampos（阿利基斯）", ja: "11. イッポカンボス（アリキェス）", ru: "11. Иппокампос (Аликес)" },
+          desc: { el: "Θαλασσινά, πίτσα και θέα στον Παγασητικό.", en: "Seafood, pizza and views over the Pagasetic Gulf.", fr: "Fruits de mer, pizza et vue sur le golfe Pagasitique.", de: "Meeresfrüchte, Pizza und Blick auf den Pagasitischen Golf.", es: "Marisco, pizza y vistas al golfo Pagasético.", it: "Pesce, pizza e vista sul golfo Pagasitico.", zh: "海鲜、披萨，可欣赏帕加西提克湾景色。", ja: "シーフードとピザ、パガシティコス湾の眺め。", ru: "Морепродукты, пицца и вид на Пагасетический залив." } }
+    ],
+    beaches: [
+        { lat: 39.3510, lng: 22.9640, distKm: 5.5, timeMin: 12, rating: "⭐ 4.2", url: "https://maps.google.com/?q=Anavros+Beach", image: "anavros_3.jpg",
+          title: { el: "1. Παραλία Αναύρου", en: "1. Anavros Beach", fr: "1. Plage d'Anavros", de: "1. Strand Anavros", es: "1. Playa de Anavros", it: "1. Spiaggia di Anavros", zh: "1. Anavros 海滩", ja: "1. アナヴロス・ビーチ", ru: "1. Пляж Анаврос" },
+          desc: { el: "Καθαρή οργανωμένη αμμουδιά.", en: "Clean, organized sandy beach.", fr: "Plage de sable propre et organisée.", de: "Sauberer, organisierter Sandstrand.", es: "Playa de arena limpia y organizada.", it: "Spiaggia di sabbia pulita e organizzata.", zh: "干净、设施齐全的沙滩。", ja: "清潔で整備された砂浜。", ru: "Чистый благоустроенный песчаный пляж." } },
+        { lat: 39.3065, lng: 23.1195, distKm: 24, timeMin: 30, rating: "⭐ 4.6", url: "https://maps.google.com/?q=Kala+Nera+Beach", image: "kalanera_3.jpg",
+          title: { el: "2. Παραλία Καλά Νερά", en: "2. Kala Nera Beach", fr: "2. Plage de Kala Nera", de: "2. Strand Kala Nera", es: "2. Playa de Kala Nera", it: "2. Spiaggia di Kala Nera", zh: "2. Kala Nera 海滩", ja: "2. カラ・ネラ・ビーチ", ru: "2. Пляж Кала Нера" },
+          desc: { el: "Ήρεμα νερά στον Παγασητικό.", en: "Calm waters on the Pagasetic Gulf.", fr: "Eaux calmes du golfe Pagasitique.", de: "Ruhiges Wasser im Pagasitischen Golf.", es: "Aguas tranquilas en el golfo Pagasético.", it: "Acque calme nel golfo Pagasitico.", zh: "帕加西提克湾的宁静海水。", ja: "パガシティコス湾の穏やかな海。", ru: "Спокойные воды Пагасетического залива." } },
+        { lat: 39.2710, lng: 23.0980, distKm: 32, timeMin: 38, rating: "⭐ 4.6", url: "https://maps.google.com/?q=Afissos+Abovos", image: "afisos_2.jpg",
+          title: { el: "3. Άφησσος - Άμποβος", en: "3. Afissos - Abovos", fr: "3. Afissos - Abovos", de: "3. Afissos - Abovos", es: "3. Afissos - Abovos", it: "3. Afissos - Abovos", zh: "3. Afissos - Abovos", ja: "3. アフィソス - アンボヴォス", ru: "3. Афиссос - Абовос" },
+          desc: { el: "Ειδυλλιακός κόλπος.", en: "An idyllic bay.", fr: "Une baie idyllique.", de: "Eine idyllische Bucht.", es: "Una bahía idílica.", it: "Una baia idilliaca.", zh: "如诗如画的海湾。", ja: "牧歌的な入り江。", ru: "Идиллический залив." } },
+        { lat: 39.3912, lng: 23.1550, distKm: 37, timeMin: 52, rating: "⭐ 4.9", url: "https://maps.google.com/?q=Agioi+Saranta+Pelion", image: "agiisaranta.jpg",
+          title: { el: "4. Παραλία Άγιοι Σαράντα", en: "4. Agioi Saranta Beach", fr: "4. Plage d'Agioi Saranta", de: "4. Strand Agioi Saranta", es: "4. Playa de Agioi Saranta", it: "4. Spiaggia di Agioi Saranta", zh: "4. Agioi Saranta 海滩", ja: "4. アギイ・サランタ・ビーチ", ru: "4. Пляж Агии Саранта" },
+          desc: { el: "Εξωτική παραλία του Αιγαίου.", en: "Exotic Aegean beach.", fr: "Plage exotique de la mer Égée.", de: "Exotischer Strand an der Ägäis.", es: "Playa exótica del Egeo.", it: "Spiaggia esotica dell'Egeo.", zh: "爱琴海的异域海滩。", ja: "エーゲ海のエキゾチックなビーチ。", ru: "Экзотический пляж Эгейского моря." } },
+        { lat: 39.3735, lng: 23.1740, distKm: 44, timeMin: 60, rating: "⭐ 4.8", url: "https://maps.google.com/?q=Mylopotamos+Pelion", image: "milopotamos_3.jpg",
+          title: { el: "5. Μυλοπόταμος", en: "5. Mylopotamos", fr: "5. Mylopotamos", de: "5. Mylopotamos", es: "5. Mylopotamos", it: "5. Mylopotamos", zh: "5. Mylopotamos", ja: "5. ミロポタモス", ru: "5. Милопотамос" },
+          desc: { el: "Λευκά βότσαλα.", en: "White pebble beach.", fr: "Plage de galets blancs.", de: "Strand mit weißen Kieseln.", es: "Playa de guijarros blancos.", it: "Spiaggia di ciottoli bianchi.", zh: "洁白鹅卵石海滩。", ja: "白い小石のビーチ。", ru: "Пляж с белой галькой." } },
+        { lat: 39.4168, lng: 23.1614, distKm: 49, timeMin: 65, rating: "⭐ 4.7", url: "https://maps.google.com/?q=Agios+Ioannis+Pelion", image: "agiosioannis_2.jpg",
+          title: { el: "6. Παραλία Άγιος Ιωάννης", en: "6. Agios Ioannis Beach", fr: "6. Plage d'Agios Ioannis", de: "6. Strand Agios Ioannis", es: "6. Playa de Agios Ioannis", it: "6. Spiaggia di Agios Ioannis", zh: "6. Agios Ioannis 海滩", ja: "6. アギオス・イオアニス・ビーチ", ru: "6. Пляж Агиос Иоаннис" },
+          desc: { el: "Κοσμοπολίτικη παραλία.", en: "Cosmopolitan beach.", fr: "Plage cosmopolite.", de: "Kosmopolitischer Strand.", es: "Playa cosmopolita.", it: "Spiaggia cosmopolita.", zh: "国际化氛围的海滩。", ja: "国際色豊かなビーチ。", ru: "Космополитичный пляж." } }
+    ],
+    trips: [
+        { lat: 39.3915, lng: 22.9990, distKm: 6.0, timeMin: 10, rating: "⭐ 4.8", url: "https://maps.google.com/?q=Portaria+Pelion", image: "portaria_3.jpg",
+          title: { el: "1. Πορταριά", en: "1. Portaria", fr: "1. Portaria", de: "1. Portaria", es: "1. Portaria", it: "1. Portaria", zh: "1. 波尔塔里亚（Portaria）", ja: "1. ポルタリア", ru: "1. Портария" },
+          desc: { el: "Πηλιορείτικο χωριό.", en: "A traditional Pelion village.", fr: "Village traditionnel du Pélion.", de: "Traditionelles Dorf im Pilion.", es: "Pueblo tradicional del Pelión.", it: "Villaggio tradizionale del Pelio.", zh: "传统的皮利翁山村庄。", ja: "伝統的なピリオンの村。", ru: "Традиционная деревня Пелиона." } },
+        { lat: 39.3980, lng: 22.9880, distKm: 8.5, timeMin: 15, rating: "⭐ 4.9", url: "https://maps.google.com/?q=Makrinitsa+Pelion", image: "makrinitsa-.jpg",
+          title: { el: "2. Μακρινίτσα", en: "2. Makrinitsa", fr: "2. Makrinitsa", de: "2. Makrinitsa", es: "2. Makrinitsa", it: "2. Makrinitsa", zh: "2. 马克里尼察（Makrinitsa）", ja: "2. マクリニツァ", ru: "2. Макриница" },
+          desc: { el: "Το μπαλκόνι του Πηλίου.", en: "The balcony of Pelion.", fr: "Le balcon du Pélion.", de: "Der Balkon des Pilion.", es: "El balcón del Pelión.", it: "Il balcone del Pelio.", zh: "皮利翁山的阳台。", ja: "ピリオンのバルコニー。", ru: "Балкон Пелиона." } },
+        { lat: 39.3295, lng: 23.1310, distKm: 27, timeMin: 35, rating: "⭐ 4.8", url: "https://maps.google.com/?q=Milies+Pelion", image: "milies_3.jpg",
+          title: { el: "3. Μηλιές", en: "3. Milies", fr: "3. Milies", de: "3. Milies", es: "3. Milies", it: "3. Milies", zh: "3. 米利埃斯（Milies）", ja: "3. ミリエス", ru: "3. Милиес" },
+          desc: { el: "Ιστορικό χωριό.", en: "Historic village.", fr: "Village historique.", de: "Historisches Dorf.", es: "Pueblo histórico.", it: "Villaggio storico.", zh: "历史悠久的村庄。", ja: "歴史ある村。", ru: "Историческая деревня." } },
+        { lat: 39.1610, lng: 23.0470, distKm: 52, timeMin: 90, rating: "⭐ 4.9", url: "https://maps.google.com/?q=Trikeri+Island", image: "trikeri_2.jpg",
+          title: { el: "4. Παλαιό Τρίκερι", en: "4. Palio Trikeri", fr: "4. Palio Trikeri", de: "4. Palio Trikeri", es: "4. Palio Trikeri", it: "4. Palio Trikeri", zh: "4. 特里克里老城（Palio Trikeri）", ja: "4. パリオ・トリケリ", ru: "4. Палио Трикери" },
+          desc: { el: "Γραφικό νησάκι (οδικώς έως Αγία Κυριακή + πλοιάριο).", en: "Picturesque islet (by road to Agia Kyriaki + boat).", fr: "Îlot pittoresque (route jusqu'à Agia Kyriaki + bateau).", de: "Malerische Insel (mit dem Auto bis Agia Kyriaki + Boot).", es: "Islote pintoresco (por carretera hasta Agia Kyriaki + barco).", it: "Isolotto pittoresco (in auto fino ad Agia Kyriaki + barca).", zh: "风景如画的小岛（驱车至阿吉亚基里亚基 + 乘船）。", ja: "絵のように美しい島（アギア・キリアキまで車、その後船）。", ru: "Живописный островок (дорога до Агия Кириаки + лодка)." } },
+        { lat: 39.7127, lng: 21.6264, distKm: 148, timeMin: 115, rating: "⭐ 4.9", url: "https://maps.google.com/?q=Meteora+Greece", image: "meteora_3.jpg",
+          title: { el: "5. Μετέωρα", en: "5. Meteora", fr: "5. Météores", de: "5. Meteora", es: "5. Meteora", it: "5. Meteora", zh: "5. 迈泰奥拉（Meteora）", ja: "5. メテオラ", ru: "5. Метеоры" },
+          desc: { el: "Επιβλητικοί βράχοι.", en: "Majestic rock formations.", fr: "Rochers majestueux.", de: "Imposante Felsformationen.", es: "Imponentes formaciones rocosas.", it: "Imponenti formazioni rocciose.", zh: "雄伟壮观的岩石地貌。", ja: "壮大な岩の造形。", ru: "Величественные скальные образования." } }
+    ]
+};
+        const sharedCategories = [
+    { options: placesData.food },
+    { catIndex: 1, options: placesData.beaches },
+    { catIndex: 2, options: placesData.trips }
+];
+        // 🚀 ΠΛΗΡΗ ΔΕΔΟΜΕΝΑ ΜΕΤΑΦΡΑΣΕΩΝ
+        const db = {
             el: {
                 subtitle: "● AI Concierge Live",
-                gpsBtn: "Οδηγίες Πρόσβασης (GPS)",
-                placesHeader: "Προτεινόμενες Εμπειρίες",
-                chatHeader: "Live Chat",
-                whatsapp: "WhatsApp Direct",
-                weatherBtn: "🌤️ Καιρός",
-                eventsBtn: "🎭 Εκδηλώσεις",
-                rulesBtn: "📝 Κανόνες",
-                taxiBtn: "🚖 Ταξί",
-                inputPlaceholder: "Γράψτε τη سؤال σας...",
-                welcomeMsg: "Γεια σας! 🌿 Είμαι ο AI Concierge του Afroditi Guest House. Πώς μπορώ να σας βοηθήσω;",
-                mapBtn: "🗺️ Χάρτης",
-                dirBtn: "🚗 Οδηγίες"
+                secPlaces: "Προτεινόμενες Εμπειρίες",
+                secChat: "Live Υποστήριξη",
+                placeholder: "Πληκτρολογήστε ή μιλήστε...",
+                listening: "Σας ακούω...",
+                welcome: "Καλώς ήρθατε στο Λόφος Επισκοπής! Είμαστε ο Γιώργος και η Δέσποινα. Ρωτήστε με ό,τι θέλετε ή πατήστε ένα έτοιμο κουμπί.",
+                gpsFormat: "📍 {dist} χλμ | 🚗 ~{time} λεπτά",
+                gpsNav: "Οδηγίες GPS →",
+                tags: { weather: "🌤️ Καιρός", events: "🎭 Εκδηλώσεις", rules: "📝 Κανόνες", taxi: "🚖 Ταξί" },
+                wifi: { text: "Το δίκτυο ονομάζεται TP-Link_84FE και ο κωδικός πρόσβασης είναι 22170811." },
+                food: { text: "Σας προτείνω το Μεζέν στον Βόλο για τσίπουρο, ή το ουζερί Δεμίρης για κορυφαίους θαλασσινούς μεζέδες." },
+                beach: { text: "Η πιο κοντινή παραλία είναι ο Άναυρος. Για καταγάλανη θάλασσα προτείνω οπωσδήποτε τον Μυλοπόταμο ή τους Αγίους Σαράντα." },
+                weather: { text: "Αυτή τη στιγμή η θερμοκρασία στην περιοχή μας είναι {temp} βαθμοί Κελσίου." },
+                events: { text: "Αυτό το διάστημα γίνονται συναυλίες στο Θερινό Θέατρο Βόλου και παραδοσιακά πανηγύρια στα χωριά." },
+                rules: { text: "Το check-in και το check-out είναι ευέλικτα, μετά από συνεννόηση με τον ιδιοκτήτη. Σας ευχαριστούμε και καλή σας διαμονή!" },
+                taxi: { text: "Καλέστε το Ραδιοταξί Βόλου στο τηλέφωνο 24210-27777. Η χρέωση για το κέντρο είναι περίπου 6 ευρώ." },
+                excursion: { text: "Τα Μετέωρα απέχουν μιάμισι με δύο ώρες οδικώς. Τα πλοία για Σποράδες αναχωρούν καθημερινά από το λιμάνι." },
+                nightlife: { text: "Για βραδινή έξοδο και κοκτέιλ, προτείνω την οδό Κουμουνδούρου και την περιοχή του Αγίου Νικολάου στο κέντρο του Βόλου." },
+                hiking: { text: "Το Πήλιο είναι ιδανικό για πεζοπορία. Μια εξαιρετική διαδρομή είναι το Μονοπάτι των Κενταύρων στην Πορταριά." },
+                failMessage: "Συγγνώμη, γνωρίζω μόνο πληροφορίες για το κατάλυμα και την περιοχή. Ρωτήστε με για φαγητό, παραλίες, ταξί ή εκδρομές!",
+                keywords: {
+                    wifi: ['wifi','κωδικ','ιντερνετ','password'],
+                    food: ['φαγ','τσιπουρ','ταβερν','φαγητο','μεζεν','δεμιρ','καβουρ','φιλαρακ','ιωδιο','παπαδ'],
+                    beach: ['παραλ','θαλασσ','μπανιο','αναυρ','μυλοποτ','αφησσ','καλα νερα','σαραντα','αγιος ιωαννης'],
+                    weather: ['καιρ','βρεχ','ζεστ','κρυο','θερμοκρ','weather'],
+                    events: ['εκδηλ','πανηγυρ','συναυλ','παραστασ','events'],
+                    rules: ['κανον','check','ωρες','ησυχ','σκουπιδ','rules'],
+                    taxi: ['ταξι','taxi','λεωφορ'],
+                    excursion: ['μετεωρ','σκιαθ','αλοννησ','εκδρομ','νησι','πλοιο','meteora','πορταρ','μακριν'],
+                    nightlife: ['μπαρ','ποτο','εξοδ','κοκτειλ','ποτά','βραδ','νυχτ','κλαμπ'],
+                    hiking: ['μονοπατ','πεζοπορ','βουν','φυσ','περπατ']
+                },
+                catNames: ["Φαγητό & Τσίπουρο", "Κοντινές Παραλίες", "Αποδράσεις & Εκδρομές"]
             },
             en: {
                 subtitle: "● AI Concierge Live",
-                gpsBtn: "Directions & Access (GPS)",
-                placesHeader: "Recommended Experiences",
-                chatHeader: "Live Chat",
-                whatsapp: "WhatsApp Direct",
-                weatherBtn: "🌤️ Weather",
-                eventsBtn: "🎭 Events",
-                rulesBtn: "📝 House Rules",
-                taxiBtn: "🚖 Taxi Call",
-                inputPlaceholder: "Ask me anything...",
-                welcomeMsg: "Hello! 🌿 I am your AI Concierge at Afroditi Guest House. How can I assist you today?",
-                mapBtn: "🗺️ Map",
-                dirBtn: "🚗 Directions"
+                secPlaces: "Recommended Experiences",
+                secChat: "Live Chat Support",
+                placeholder: "Type or speak to me...",
+                listening: "Listening...",
+                welcome: "Welcome to Lofos Episkopis! We are George and Despoina. Ask us anything or tap a button.",
+                gpsFormat: "📍 {dist} km | 🚗 ~{time} mins",
+                gpsNav: "GPS Directions →",
+                tags: { weather: "🌤️ Weather", events: "🎭 Events", rules: "📝 Rules", taxi: "🚖 Taxi" },
+                wifi: { text: "The network name is TP-Link_84FE and the password is 22170811." },
+                food: { text: "I highly recommend Mezen in Volos for tsipouro, or Demiris for amazing seafood." },
+                beach: { text: "The closest beach is Anavros. For Aegean crystal waters, check Mylopotamos beach." },
+                weather: { text: "The current temperature is {temp} degrees Celsius. The weather is beautiful." },
+                events: { text: "There are local summer concerts in Volos and traditional festivals in the mountain villages." },
+                rules: { text: "Check-in and check-out are flexible, by arrangement with the owner. Thank you, and enjoy your stay!" },
+                taxi: { text: "Call Radio Taxi Volos at 24210-27777. The average fare to the center is around 6 euros." },
+                excursion: { text: "Meteora holy rocks are about 1.5-2 hours away by road. Ferries to Skiathos depart daily from Volos Port." },
+                nightlife: { text: "For a night out and cocktails, I recommend Koumoundourou street and the Agios Nikolaos area in the center of Volos." },
+                hiking: { text: "Pelion is perfect for hiking. A great and easy route is the Centaurs' Path in Portaria." },
+                failMessage: "I'm sorry, I only know information about the property and the local area. Ask me about food, beaches or taxis!",
+                keywords: {
+                    wifi: ['wifi','code','internet','password'],
+                    food: ['food','eat','mezen','demiris','restaurant','tavern','tsipouro','kavouras','filaraki','iodio','papadis'],
+                    beach: ['beach','sea','swim','anavros','mylopotamos','afissos','kala nera','saranta','agios ioannis'],
+                    weather: ['weather','rain','hot','cold','temperature'],
+                    events: ['event','concert','festival','show'],
+                    rules: ['rule','check','hours','quiet','trash'],
+                    taxi: ['taxi','cab','bus'],
+                    excursion: ['meteora','skiathos','alonnisos','trip','island','boat','portaria','makrinitsa'],
+                    nightlife: ['bar','drink','night','club','cocktail','out'],
+                    hiking: ['hike','hiking','trail','walk','mountain','path']
+                },
+                catNames: ["Food & Tsipouro", "Nearby Beaches", "Day Trips & Getaways"]
             },
             fr: {
-                subtitle: "● AI Concierge En Ligne",
-                gpsBtn: "Itinéraire & GPS",
-                placesHeader: "Expériences Recommandées",
-                chatHeader: "Discussion en direct",
-                whatsapp: "WhatsApp Direct",
-                weatherBtn: "🌤️ Météo",
-                eventsBtn: "🎭 Événements",
-                rulesBtn: "📝 Règlement",
-                taxiBtn: "🚖 Appeler un Taxi",
-                inputPlaceholder: "Posez votre question...",
-                welcomeMsg: "Bonjour ! 🌿 Je suis votre Concierge AI. Comment puis-je vous aider ?",
-                mapBtn: "🗺️ Carte",
-                dirBtn: "🚗 Itinéraire"
+                subtitle: "● Concierge IA En Direct",
+                secPlaces: "Expériences Recommandées",
+                secChat: "Support en Direct",
+                placeholder: "Écrivez ou parlez...",
+                listening: "Je vous écoute...",
+                welcome: "Bienvenue à Lofos Episkopis! Nous sommes George et Despoina. Posez vos questions ou cliquez sur un bouton.",
+                gpsFormat: "📍 {dist} km | 🚗 ~{time} min",
+                gpsNav: "Directions GPS →",
+                tags: { weather: "🌤️ Météo", events: "🎭 Événements", rules: "📝 Règles", taxi: "🚖 Taxi" },
+                wifi: { text: "Le réseau s'appelle TP-Link_84FE et le mot de passe est 22170811." },
+                food: { text: "Je vous recommande Mezen à Volos pour le tsipouro, ou Demiris pour les fruits de mer." },
+                beach: { text: "La plage la plus proche est Anavros. Pour une mer cristalline, je suggère Mylopotamos." },
+                weather: { text: "La température actuelle est de {temp} degrés Celsius. Le temps est magnifique." },
+                events: { text: "Il y a des concerts au théâtre d'été de Volos et des festivals traditionnels dans les villages." },
+                rules: { text: "Le check-in et le check-out sont flexibles, à convenir avec le propriétaire. Merci et bon séjour !" },
+                taxi: { text: "Appelez Radio Taxi Volos au 24210-27777. Le coût est d'environ six euros." },
+                excursion: { text: "Les Météores sont à environ 1h30-2h de route. Les ferries partent du port de Volos." },
+                nightlife: { text: "Pour sortir le soir, je recommande la rue Koumoundourou et le quartier d'Agios Nikolaos au centre de Volos." },
+                hiking: { text: "Le Pélion est idéal pour la randonnée. Le sentier des Centaures à Portaria est un excellent parcours." },
+                failMessage: "Désolé, je ne connais que des informations sur la propriété et la région locale. Demandez-moi pour la nourriture ou les plages!",
+                keywords: {
+                    wifi: ['wifi','code','internet','mot de passe','password'],
+                    food: ['manger','mezen','demiris','restaurant','taverne','tsipouro'],
+                    beach: ['plage','mer','baignade','anavros','mylopotamos','afissos','kala nera'],
+                    weather: ['meteo','temps','pluie','chaud','froid','temperature'],
+                    events: ['evenement','concert','festival','fete'],
+                    rules: ['regle','check','heure','silence','dechet'],
+                    taxi: ['taxi','bus','transport'],
+                    excursion: ['meteore','skiathos','alonnisos','excursion','ile','bateau','meteora'],
+                    nightlife: ['bar','verre','nuit','soir','cocktail'],
+                    hiking: ['randonnee','marche','montagne','sentier']
+                },
+                catNames: ["Gastronomie Local", "Plages Proches", "Excursions & Visites"]
             },
             de: {
                 subtitle: "● AI Concierge Live",
-                gpsBtn: "Anreise & GPS",
-                placesHeader: "Empfohlene Erlebnisse",
-                chatHeader: "Live-Chat",
-                whatsapp: "WhatsApp Direkt",
-                weatherBtn: "🌤️ Wetter",
-                eventsBtn: "🎭 Events",
-                rulesBtn: "📝 Hausregeln",
-                taxiBtn: "🚖 Taxi Rufen",
-                inputPlaceholder: "Fragen Sie mich etwas...",
-                welcomeMsg: "Hallo! 🌿 Ich bin Ihr AI Concierge im Afroditi Guest House. Wie kann ich Ihnen helfen?",
-                mapBtn: "🗺️ Karte",
-                dirBtn: "🚗 Route"
+                secPlaces: "Empfohlene Erlebnisse",
+                secChat: "Live-Chat",
+                placeholder: "Tippen oder sprechen...",
+                listening: "Ich höre zu...",
+                welcome: "Willkommen in Lofos Episkopis! Wir sind George und Despoina. Fragen Sie uns alles oder tippen Sie auf eine Schaltfläche.",
+                gpsFormat: "📍 {dist} km | 🚗 ~{time} Min.",
+                gpsNav: "GPS-Navigation →",
+                tags: { weather: "🌤️ Wetter", events: "🎭 Veranstaltungen", rules: "📝 Regeln", taxi: "🚖 Taxi" },
+                wifi: { text: "Das Netzwerk heißt TP-Link_84FE und das Passwort lautet 22170811." },
+                food: { text: "Ich empfehle Mezen in Volos für Tsipouro oder Demiris für erstklassige Meeresfrüchte." },
+                beach: { text: "Der nächste Strand ist Anavros. Für kristallklares Wasser empfehle ich Mylopotamos." },
+                weather: { text: "Die aktuelle Temperatur beträgt {temp} Grad Celsius. Das Wetter ist wunderbar." },
+                events: { text: "Derzeit gibt es Sommerkonzerte in Volos und traditionelle Feste in den Dörfern." },
+                rules: { text: "Check-in und Check-out sind flexibel, nach Absprache mit dem Eigentümer. Vielen Dank und einen schönen Aufenthalt!" },
+                taxi: { text: "Rufen Sie Radio Taxi Volos unter 24210-27777 an. Die Fahrt ins Zentrum kostet etwa 6 Euro." },
+                excursion: { text: "Meteora ist etwa 1,5 bis 2 Autostunden entfernt. Fähren nach Skiathos fahren täglich vom Hafen ab." },
+                nightlife: { text: "Für einen Abend und Cocktails empfehle ich die Koumoundourou Straße im Zentrum von Volos." },
+                hiking: { text: "Pilion ist perfekt zum Wandern. Eine tolle Route ist der Pfad der Kentauren in Portaria." },
+                failMessage: "Entschuldigung, ich kenne nur Informationen über die Unterkunft und die lokale Umgebung.",
+                keywords: {
+                    wifi: ['wlan', 'wifi', 'passwort', 'internet', 'code'],
+                    food: ['essen', 'restaurant', 'mezen', 'demiris', 'taverne', 'meeresfrüchte', 'tsipouro'],
+                    beach: ['strand', 'meer', 'schwimmen', 'anavros', 'mylopotamos'],
+                    weather: ['wetter', 'temperatur', 'kalt', 'heiß', 'regen'],
+                    events: ['veranstaltung', 'konzert', 'fest', 'event'],
+                    rules: ['regel', 'check', 'ruhe', 'müll', 'uhrzeit'],
+                    taxi: ['taxi', 'bus', 'transport'],
+                    excursion: ['ausflug', 'meteora', 'skiathos', 'insel', 'boot', 'fähre'],
+                    nightlife: ['bar','drink','nacht','cocktail','ausgehen'],
+                    hiking: ['wandern','wanderung','berg','pfad','weg']
+                },
+                catNames: ["Essen & Tsipouro", "Strände in der Nähe", "Ausflüge & Tagestouren"]
             },
             es: {
-                subtitle: "● AI Concierge En Vivo",
-                gpsBtn: "Cómo llegar (GPS)",
-                placesHeader: "Experiencias Recomendadas",
-                chatHeader: "Chat en Vivo",
-                whatsapp: "WhatsApp Directo",
-                weatherBtn: "🌤️ Tiempo",
-                eventsBtn: "🎭 Eventos",
-                rulesBtn: "📝 Reglas",
-                taxiBtn: "🚖 Pedir Taxi",
-                inputPlaceholder: "Escribe tu pregunta...",
-                welcomeMsg: "¡Hola! 🌿 Soy tu Asistente AI en Afroditi Guest House. ¿En qué puedo ayudarte?",
-                mapBtn: "🗺️ Mapa",
-                dirBtn: "🚗 Cómo llegar"
+                subtitle: "● Conserje AI en Vivo",
+                secPlaces: "Experiencias Recomendadas",
+                secChat: "Soporte en Vivo",
+                placeholder: "Escribe o háblame...",
+                listening: "Escuchando...",
+                welcome: "¡Bienvenidos a Lofos Episkopis! Somos George y Despoina. Pregúntanos lo que quieras o toca un botón.",
+                gpsFormat: "📍 {dist} km | 🚗 ~{time} min",
+                gpsNav: "Navegación GPS →",
+                tags: { weather: "🌤️ Tiempo", events: "🎭 Eventos", rules: "📝 Reglas", taxi: "🚖 Taxi" },
+                wifi: { text: "La red se llama TP-Link_84FE y la contraseña es 22170811." },
+                food: { text: "Recomiendo Mezen en Volos para tsipouro, o Demiris para excelentes mariscos." },
+                beach: { text: "La playa más cercana es Anavros. Para aguas cristalinas, recomiendo Mylopotamos." },
+                weather: { text: "La temperatura actual es de {temp} grados Celsius. El clima es hermoso." },
+                events: { text: "Hay conciertos de verano en Volos y festivales tradicionales en los pueblos." },
+                rules: { text: "El check-in y el check-out son flexibles, previo acuerdo con el propietario. ¡Gracias y que disfrute su estancia!" },
+                taxi: { text: "Llame a Radio Taxi Volos al 24210-27777. La tarifa al centro es de unos 6 euros." },
+                excursion: { text: "Meteora está a 1,5-2 horas en coche. Los ferries a Skiathos salen del puerto todos los días." },
+                nightlife: { text: "Para salir de noche, recomiendo la calle Koumoundourou y la zona de Agios Nikolaos en el centro de Volos." },
+                hiking: { text: "Pelión es ideal para hacer senderismo. Una gran ruta es el Sendero de los Centauros en Portaria." },
+                failMessage: "Lo siento, solo conozco información sobre la propiedad y el área local.",
+                keywords: {
+                    wifi: ['wifi', 'contraseña', 'internet', 'clave'],
+                    food: ['comida', 'comer', 'restaurante', 'mezen', 'demiris', 'taberna', 'marisco'],
+                    beach: ['playa', 'mar', 'nadar', 'baño', 'anavros', 'mylopotamos'],
+                    weather: ['tiempo', 'clima', 'temperatura', 'lluvia', 'frío', 'calor'],
+                    events: ['evento', 'concierto', 'festival', 'fiesta'],
+                    rules: ['regla', 'salida', 'hora', 'silencio', 'basura'],
+                    taxi: ['taxi', 'autobús', 'transporte'],
+                    excursion: ['excursión', 'meteora', 'skiathos', 'isla', 'barco'],
+                    nightlife: ['bar','copa','noche','coctel','salir'],
+                    hiking: ['senderismo','caminar','montaña','ruta','camino']
+                },
+                catNames: ["Comida & Tsipouro", "Playas Cercanas", "Excursiones y Escapadas"]
             },
             it: {
-                subtitle: "● AI Concierge Live",
-                gpsBtn: "Indicazioni & GPS",
-                placesHeader: "Esperienze Consigliate",
-                chatHeader: "Chat dal Vivo",
-                whatsapp: "WhatsApp Diretto",
-                weatherBtn: "🌤️ Meteo",
-                eventsBtn: "🎭 Eventi",
-                rulesBtn: "📝 Regole",
-                taxiBtn: "🚖 Chiama Taxi",
-                inputPlaceholder: "Chiedimi qualsiasi cosa...",
-                welcomeMsg: "Ciao! 🌿 Sono il tuo AI Concierge all'Afroditi Guest House. Come posso aiutarti?",
-                mapBtn: "🗺️ Mappa",
-                dirBtn: "🚗 Indicazioni"
+                subtitle: "● Concierge AI Live",
+                secPlaces: "Esperienze Consigliate",
+                secChat: "Supporto Live",
+                placeholder: "Scrivi o parlami...",
+                listening: "Ti ascolto...",
+                welcome: "Benvenuti a Lofos Episkopis! Siamo George e Despoina. Chiedeteci qualsiasi cosa o premete un pulsante.",
+                gpsFormat: "📍 {dist} km | 🚗 ~{time} min",
+                gpsNav: "Indicazioni GPS →",
+                tags: { weather: "🌤️ Meteo", events: "🎭 Eventi", rules: "📝 Regole", taxi: "🚖 Taxi" },
+                wifi: { text: "La rete si chiama TP-Link_84FE e la password è 22170811." },
+                food: { text: "Consiglio Mezen a Volos per lo tsipouro, o Demiris per i frutti di mare." },
+                beach: { text: "La spiaggia più vicina è Anavros. Per acque cristalline, suggerisco Mylopotamos." },
+                weather: { text: "La temperatura attuale è di {temp} gradi Celsius. Il tempo è bellissimo." },
+                events: { text: "Ci sono concerti estivi a Volos e feste tradizionali nei villaggi." },
+                rules: { text: "Il check-in e il check-out sono flessibili, previo accordo con il proprietario. Grazie e buon soggiorno!" },
+                taxi: { text: "Chiamate Radio Taxi Volos al 24210-27777. La tariffa per il centro è di circa 6 euro." },
+                excursion: { text: "Le Meteore sono a circa 1,5-2 ore di auto. I traghetti per Skiathos partono ogni giorno dal porto." },
+                nightlife: { text: "Per una serata fuori, consiglio la via Koumoundourou nel centro di Volos." },
+                hiking: { text: "Il Pelio è perfetto per le escursioni. Un ottimo percorso è il Sentiero dei Centauri a Portaria." },
+                failMessage: "Spiacente, conosco solo informazioni sulla struttura e sulla zona locale.",
+                keywords: {
+                    wifi: ['wifi', 'password', 'internet', 'codice'],
+                    food: ['cibo', 'mangiare', 'ristorante', 'mezen', 'demiris', 'taverna'],
+                    beach: ['spiaggia', 'mare', 'bagno', 'anavros', 'mylopotamos'],
+                    weather: ['meteo', 'tempo', 'temperatura', 'pioggia', 'caldo', 'freddo'],
+                    events: ['evento', 'concerto', 'festa', 'festival'],
+                    rules: ['regla', 'check', 'ora', 'silenzio'],
+                    taxi: ['taxi', 'autobus', 'trasporto'],
+                    excursion: ['escursione', 'meteora', 'skiathos', 'isola', 'traghetto'],
+                    nightlife: ['bar','bere','notte','cocktail','uscire'],
+                    hiking: ['escursione','camminare','montagna','sentiero']
+                },
+                catNames: ["Cibo & Tsipouro", "Spiagge Vicine", "Gite e Escursioni"]
             },
             zh: {
-                subtitle: "● AI 管家在线",
-                gpsBtn: "获取位置与导航 (GPS)",
-                placesHeader: "推荐体验",
-                chatHeader: "在线咨询",
-                whatsapp: "WhatsApp 联系",
-                weatherBtn: "🌤️ 天气",
-                eventsBtn: "🎭 活动",
-                rulesBtn: "📝 住宿须知",
-                taxiBtn: "🚖 叫出租车",
-                inputPlaceholder: "请输入您的问题...",
-                welcomeMsg: "您好！🌿 我是 Afroditi Guest House 的 AI 管家。请问有什么可以帮您？",
-                mapBtn: "🗺️ 地图",
-                dirBtn: "🚗 路线"
+                subtitle: "● AI 实时服务",
+                secPlaces: "推荐体验",
+                secChat: "实时聊天",
+                placeholder: "输入或对我说话...",
+                listening: "倾听中...",
+                welcome: "欢迎来到 Lofos Episkopis！我们是 George 和 Despoina。请问我任何问题，或点击下方按钮。",
+                gpsFormat: "📍 {dist} 公里 | 🚗 ~{time} 分钟",
+                gpsNav: "GPS 导航 →",
+                tags: { weather: "🌤️ 天气", events: "🎭 活动", rules: "📝 规则", taxi: "🚖 出租车" },
+                wifi: { text: "网络名称是 TP-Link_84FE，密码是 22170811。" },
+                food: { text: "我强烈推荐去沃洛斯的 Mezen 喝齐普罗酒，或者去 Demiris 吃顶级海鲜。" },
+                beach: { text: "最近的海滩是 Anavros。要想体验清澈的海水，推荐 Mylopotamos。" },
+                weather: { text: "当前温度是 {temp} 摄氏度。天气非常美。" },
+                events: { text: "目前沃洛斯有夏季音乐会，周边村庄有传统节日。" },
+                rules: { text: "入住和退房时间灵活，可与房东协商安排。谢谢，祝您入住愉快！" },
+                taxi: { text: "出租车电话 24210-27777。到市中心大约 6 欧元。" },
+                excursion: { text: "迈泰奥拉车程约1.5到2小时。前往斯基亚索斯的渡轮每天从沃洛斯港出发。" },
+                nightlife: { text: "如果想在晚上出去喝鸡尾酒，我推荐去沃洛斯市中心的 Koumoundourou 街。" },
+                hiking: { text: "皮立翁山非常适合徒步旅行。Portaria 的半人马步道是一条穿越森林的绝佳路线。" },
+                failMessage: "抱歉，我只知道关于酒店和当地的信息。",
+                keywords: {
+                    wifi: ['wifi', '密码', '网络', '上网', 'password'],
+                    food: ['食物', '餐厅', '海鲜', '吃', '饭'],
+                    beach: ['海滩', '海', '游泳', '沙滩'],
+                    weather: ['天气', '温度', '冷', '热', '下雨'],
+                    events: ['活动', '音乐会', '节日', '演出'],
+                    rules: ['规则', '退房', '时间', '安静'],
+                    taxi: ['出租车', '打车', '车', '公交'],
+                    excursion: ['迈泰奥拉', '斯基亚索斯', '岛', '旅行', '游玩'],
+                    nightlife: ['酒吧','喝','夜','鸡尾酒','晚'],
+                    hiking: ['徒步','爬山','步道','山']
+                },
+                catNames: ["美食与齐普罗酒", "附近海滩", "一日游与远足"]
             },
             ja: {
                 subtitle: "● AI コンシェルジュ",
-                gpsBtn: "アクセス & GPS ナビ",
-                placesHeader: "おすすめの体験",
-                chatHeader: "ライブチャット",
-                whatsapp: "WhatsApp 直通",
-                weatherBtn: "🌤️ 天気",
-                eventsBtn: "🎭 イベント",
-                rulesBtn: "📝 ルール",
-                taxiBtn: "🚖 タクシー",
-                inputPlaceholder: "質問を入力...",
-                welcomeMsg: "こんにちは！🌿 Afroditi Guest House の AI コンシェルジュです。何かお手伝いできますか？",
-                mapBtn: "🗺️ 地図",
-                dirBtn: "🚗 ルート"
+                secPlaces: "おすすめの体験",
+                secChat: "ライブチャット",
+                placeholder: "入力するか、話しかけてください...",
+                listening: "聞いています...",
+                welcome: "Lofos Episkopisへようこそ！私たちはジョージとデスピナです。何でも聞いてください。",
+                gpsFormat: "📍 {dist} km | 🚗 約{time} 分",
+                gpsNav: "GPSナビゲーション →",
+                tags: { weather: "🌤️ 天気", events: "🎭 イベント", rules: "📝 ルール", taxi: "🚖 タクシー" },
+                wifi: { text: "Wi-Fiネットワーク名は TP-Link_84FE、パスワードは 22170811 です。" },
+                food: { text: "ヴォロスにあるMezenのツィプロ、またはDemirisのシーフードがおすすめです。" },
+                beach: { text: "一番近いビーチはAnavrosです。透明な海ならMylopotamosがおすすめです。" },
+                weather: { text: "現在の気温は {temp} 度です。素晴らしい天気です。" },
+                events: { text: "ヴォロスでは夏のコンサートが、村では伝統的なお祭りが開催されています。" },
+                rules: { text: "チェックインとチェックアウトの時間は柔軟に対応しております。オーナーとご相談ください。ありがとうございます。ご滞在をお楽しみください！" },
+                taxi: { text: "タクシーは 24210-27777 に電話してください。中心部まで約6ユーロです。" },
+                excursion: { text: "メテオラまでは車で1時間半から2時間です。スキアトス島へのフェリーは毎日出発しています。" },
+                nightlife: { text: "夜の外出やカクテルには、ヴォロス中心部のクムンドゥル通りをお勧めします。" },
+                hiking: { text: "ペリオン山はハイキングに最適です。ポルタリアにあるケンタウロスの小道は、素晴らしいルートです。" },
+                failMessage: "申し訳ありませんが、ホテルと周辺地域の情報しかわかりません。",
+                keywords: {
+                    wifi: ['wifi', 'パスワード', 'インターネット', 'wi-fi'],
+                    food: ['食べ物', 'レストラン', 'シーフード', '食事'],
+                    beach: ['ビーチ', '海', '泳ぐ'],
+                    weather: ['天気', '気温', '暑い', '寒い', '雨'],
+                    events: ['イベント', 'コンサート', 'お祭り'],
+                    rules: ['ルール', 'チェックアウト', '時間', '静か'],
+                    taxi: ['タクシー', 'バス', '交通'],
+                    excursion: ['旅行', 'メテオラ', '島', 'フェリー'],
+                    nightlife: ['バー','飲む','夜','カクテル'],
+                    hiking: ['ハイキング','歩く','山','トレイル']
+                },
+                catNames: ["グルメ＆ツィプロ", "近くのビーチ", "日帰り旅行＆エクスカーション"]
             },
             ru: {
-                subtitle: "● AI Консьерж Онлайн",
-                gpsBtn: "Маршрут & GPS",
-                placesHeader: "Рекомендуемые места",
-                chatHeader: "Онлайн чат",
-                whatsapp: "WhatsApp Прямой",
-                weatherBtn: "🌤️ Погода",
-                eventsBtn: "🎭 События",
-                rulesBtn: "📝 Правила",
-                taxiBtn: "🚖 Такси",
-                inputPlaceholder: "Задайте вопрос...",
-                welcomeMsg: "Здравствуйте! 🌿 Я ваш AI Консьерж в Afroditi Guest House. Чем могу помочь?",
-                mapBtn: "🗺️ Карта",
-                dirBtn: "🚗 Маршрут"
+                subtitle: "● ИИ-консьерж онлайн",
+                secPlaces: "Рекомендуемые места",
+                secChat: "Онлайн чат",
+                placeholder: "Напишите или скажите...",
+                listening: "Слушаю...",
+                welcome: "Добро пожаловать в Lofos Episkopis! Мы Джордж и Деспина. Спрашивайте о чем угодно.",
+                gpsFormat: "📍 {dist} км | 🚗 ~{time} мин",
+                gpsNav: "GPS навигация →",
+                tags: { weather: "🌤️ Погода", events: "🎭 Мероприятия", rules: "📝 Правила", taxi: "🚖 Такси" },
+                wifi: { text: "Сеть называется TP-Link_84FE, пароль — 22170811." },
+                food: { text: "Рекомендую Mezen в Волосе для ципуро или Demiris для морепродуктов." },
+                beach: { text: "Ближайший пляж — Anavros. Для кристально чистой воды рекомендую Mylopotamos." },
+                weather: { text: "Текущая температура {temp} градусов Цельсия. Погода прекрасная." },
+                events: { text: "В Волосе проходят летние концерты, а в деревнях — традиционные фестивали." },
+                rules: { text: "Заезд и выезд гибкие, по договорённости с владельцем. Спасибо, и приятного отдыха!" },
+                taxi: { text: "Вызовите такси Волоса по номеру 24210-27777. Поездка до центра стоит около 6 евро." },
+                excursion: { text: "Метеоры находятся примерно в 1,5-2 часах езды. Паромы на Скиатос отправляются ежедневно." },
+                nightlife: { text: "Для вечерних выходов и коктейлей я рекомендую улицу Кумундуру в центре Волоса." },
+                hiking: { text: "Пелион идеально подходит для пеших прогулок. Отличный маршрут — Тропа Кентавров в Портарии." },
+                failMessage: "Извините, я знаю только информацию об отеле и окрестностях.",
+                keywords: {
+                    wifi: ['wifi', 'пароль', 'интернет', 'вайфай'],
+                    food: ['еда', 'ресторан', 'морепродукты', 'поесть', 'таверна'],
+                    beach: ['пляж', 'море', 'купаться'],
+                    weather: ['погода', 'температура', 'холодно', 'жарко', 'дождь'],
+                    events: ['мероприятие', 'концерт', 'фестиваль'],
+                    rules: ['правило', 'выезд', 'время', 'тишина'],
+                    taxi: ['такси', 'автобус', 'транспорт'],
+                    excursion: ['экскурсия', 'метеоры', 'остров', 'паром'],
+                    nightlife: ['бар','напиток','ночь','коктейль'],
+                    hiking: ['поход','гулять','гора','тропа']
+                },
+                catNames: ["Еда и Ципуро", "Ближайшие пляжи", "Поездки и экскурсии"]
             }
         };
-
-        const placesData = [
-            {
-                id: "tsipouradiko",
-                tags: ["food"],
-                title: {
-                    el: "🐟 Παραδοσιακό Τσιπουράδικο «Μεζέ»",
-                    en: "🐟 Traditional Tsipouradiko 'Meze'",
-                    fr: "🐟 Tsipouradiko Traditionnel « Meze »",
-                    de: "🐟 Traditionelles Tsipouradiko „Meze“",
-                    es: "🐟 Taverna Tradicional de Tsipouro",
-                    it: "🐟 Tsipouradiko Tradizionale 'Meze'",
-                    zh: "🐟 传统海鲜小吃馆 Meze",
-                    ja: "🐟 伝統的ツィプραδικον Meze",
-                    ru: "🐟 Традиционная Ципурадико «Мезе»"
-                },
-                desc: {
-                    el: "Αυθεντικό τσιπουράδικο στον Βόλο. Με κάθε γύρο τσίπουρου καταφθάνουν φρέσκοι θαλασσινοί μεζέδες!",
-                    en: "Authentic Volos tsipouradiko! Fresh seafood appetizers served automatically with every round of tsipouro.",
-                    fr: "Authentique tsipouradiko à Volos ! Des mezés de la mer frais servis à chaque tournée de tsipouro.",
-                    de: "Authentisches Tsipouradiko in Volos! Frische Meeresfrüchte-Häppchen zu jeder Runde Tsipouro.",
-                    es: "¡Auténtico tsipouradiko en Volos! Aperitivos de mariscos frescos con cada ronda de tsipouro.",
-                    it: "Autentico tsipouradiko a Volos! Mezedes di pesce fresco serviti con ogni giro di tsipouro.",
-                    zh: "沃洛斯正宗希腊烈酒小吃馆！每点一杯酒即附赠免费海鲜盘。",
-                    ja: "ヴォロスの伝統的な地酒居酒屋。ツィプρο注文ごとに新鮮な海鮮おつまみが届きます。",
-                    ru: "Аутентичная ципурадика в Волосе! Свежие морепродукты подаются к каждому кругу ципуро."
-                },
-                images: [
-                    "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80",
-                    "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
-                ],
-                lat: 39.3621, lng: 22.9422
-            },
-            {
-                id: "milopotamos",
-                tags: ["beaches"],
-                title: {
-                    el: "🏖️ Παραλία Μυλοπόταμος (Πήλιο)",
-                    en: "🏖️ Milopotamos Beach (Pelion)",
-                    fr: "🏖️ Plage de Milopotamos (Pélion)",
-                    de: "🏖️ Milopotamos Strand (Pelion)",
-                    es: "🏖️ Playa Milopotamos (Pelión)",
-                    it: "🏖️ Spiaggia di Milopotamos (Pelion)",
-                    zh: "🏖️ 米洛波塔莫斯海滩 (皮利翁)",
-                    ja: "🏖️ ミロボタモス ビーチ",
-                    ru: "🏖️ Пляж Милопотамос (Пелион)"
-                },
-                desc: {
-                    el: "Η πιο διάσημη παραλία του Πηλίου με τον χαρακτηριστικό βράχο που χωρίζει την αμμουδιά στα δύο.",
-                    en: "Pelion's most iconic beach, featuring a dramatic rock arch splitting the golden pebble shore.",
-                    fr: "La plage la plus iconique du Pélion, séparée en deux par une majestueuse arche rocheuse.",
-                    de: "Pelions berühmtester Strand mit einem spektakulären Felsbogen, der das Ufer teilt.",
-                    es: "La playa más famosa de Pelión, con un impresionante arco de roca natural.",
-                    it: "La spiaggia più famosa del Pelion, caratterizzata da un maestoso arco di roccia.",
-                    zh: "皮利翁最著名的海滩，天然岩石拱门将其一分为二，水质晶莹剔透。",
-                    ja: "ペリオンで最も有名なビーチ。巨岩の洞窟で2つに分かれた絶景が広がります。",
-                    ru: "Самый знаменитый пляж Пелиона с величественной скальной аркой."
-                },
-                images: [
-                    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-                    "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80"
-                ],
-                lat: 39.3789, lng: 23.1492
-            },
-            {
-                id: "makrinitsa",
-                tags: ["villages"],
-                title: {
-                    el: "🏔️ Μακρινίτσα — «Το Μπαλκόνι του Πηλίου»",
-                    en: "🏔️ Makrinitsa — 'Balcony of Pelion'",
-                    fr: "🏔️ Makrinitsa — « Le Balcon du Pélion »",
-                    de: "🏔️ Makrinitsa — „Balkon des Pelion“",
-                    es: "🏔️ Makrinitsa — «El Balcón de Pelión»",
-                    it: "🏔️ Makrinitsa — 'Il Balcone del Pelion'",
-                    zh: "🏔️ 马克里尼察 — 皮利翁之阳台",
-                    ja: "🏔️ マクリニツァ村",
-                    ru: "🏔️ Макриница — «Балкон Пелиона»"
-                },
-                desc: {
-                    el: "Παραδοσιακός οικισμός με αρχοντικά, καλντερίμια και πανοραμική θέα σε όλο τον Παγασητικό.",
-                    en: "Traditional stone village offering cobblestone alleys and unmatched views over Volos and the bay.",
-                    fr: "Village traditionnel en pierre offrant des ruelles pavées et une vue imprenable sur la baie.",
-                    de: "Traditionelles Bergdorf mit gepflasterten Gassen und Panoramablick auf den Pagasitischen Golf.",
-                    es: "Pueblo tradicional de piedra con calles empedradas y vistas panorámicas de la bahía.",
-                    it: "Borgo tradizionale in pietra con viste mozzafiato sul golfo Pagasitikos.",
-                    zh: "保留完整的传统石头村庄，拥有精致石板路及俯瞰整个海湾的绝佳视野。",
-                    ja: "石造りの Traditional な家々と石畳の路地、全景を見渡せる絶景スポット。",
-                    ru: "Традиционная каменная деревня с панорамным видом на весь Пагаситический залив."
-                },
-                images: [
-                    "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=600&q=80",
-                    "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80"
-                ],
-                lat: 39.4019, lng: 22.9864
-            }
-        ];
-
-        const knowledgeBase = {
-            rules: {
-                el: "📝 **Κανόνες Διαμονής:**\n• Check-in: 15:00 | Check-out: 11:00\n• 🔇 Ώρες κοινής ησυχίας: 15:00-17:30 & 23:00-07:00\n• 🚭 Το κάπνισμα απαγορεύεται αυστηρά εντός των δωματίων.",
-                en: "📝 **House Rules:**\n• Check-in: 3:00 PM | Check-out: 11:00 AM\n• 🔇 Quiet hours: 3:00 PM-5:30 PM & 11:00 PM-7:00 AM\n• 🚭 Non-smoking inside the rooms.",
-                fr: "📝 **Règlement:**\n• Arrivée: 15:00 | Départ: 11:00\n• 🔇 Heures de silence: 15:00-17:30 & 23:00-07:00\n• 🚭 Interdiction de fumer dans les chambres.",
-                de: "📝 **Hausregeln:**\n• Check-in: 15:00 Uhr | Check-out: 11:00 Uhr\n• 🔇 Ruhezeiten: 15:00-17:30 & 23:00-07:00 Uhr\n• 🚭 Rauchen im Zimmer strengstens verboten.",
-                es: "📝 **Reglas:**\n• Entrada: 15:00 | Salida: 11:00\n• 🔇 Horas de silencio: 15:00-17:30 y 23:00-07:00\n• 🚭 Prohibido fumar en las habitaciones.",
-                it: "📝 **Regole della Casa:**\n• Check-in: 15:00 | Check-out: 11:00\n• 🔇 Orari di silenzio: 15:00-17:30 e 23:00-07:00\n• 🚭 Fumo severamente vietato nelle camere.",
-                zh: "📝 **住宿规则:**\n• 入住时间: 15:00 | 退房时间: 11:00\n• 🔇 安静时段: 15:00-17:30 & 23:00-07:00\n• 🚭 室内严禁吸烟。",
-                ja: "📝 **ハウスルール:**\n• チェックイン: 15:00 | チェックアウト: 11:00\n• 🔇 クワイエットタイム: 15:00-17:30 & 23:00-07:00\n• 🚭 室内禁煙。",
-                ru: "📝 **Правила дома:**\n• Заезд: 15:00 | Выезд: 11:00\n• 🔇 Часы тишины: 15:00-17:30 и 23:00-07:00\n• 🚭 Курение в номерах строго запрещено."
-            },
-            taxi: {
-                el: "🚖 **Ραδιοταξί Βόλου:**\nΚαλέστε στο **+30 24210 27777** ή ζητήστε μας να σας καλέσουμε εμείς!",
-                en: "🚖 **Volos Radio Taxi:**\nCall **+30 24210 27777** directly or ask us via WhatsApp to book one for you!",
-                fr: "🚖 **Taxi Volos:**\nAppelez le **+30 24210 27777** ou contactez-nous pour réserver.",
-                de: "🚖 **Radio Taxi Volos:**\nRufen Sie **+30 24210 27777** an oder fragen Sie uns per WhatsApp!",
-                es: "🚖 **Radio Taxi Volos:**\n¡Llama al **+30 24210 27777** o pídenos que te reservemos uno!",
-                it: "🚖 **Radio Taxi Volos:**\nChiama il **+30 24210 27777** o chiedici di prenotarne uno!",
-                zh: "🚖 **沃洛斯出租车电话:**\n请拨打 **+30 24210 27777** 或联系我们协助叫车！",
-                ja: "🚖 **ボロス・タクシー:**\n**+30 24210 27777** にお電話いただくか、フロントにお申し付けください。",
-                ru: "🚖 **Такси Волос:**\nЗвоните **+30 24210 27777** или попросите нас вызвать такси для вас!"
-            },
-            events: {
-                el: "🎭 **Πολιτιστικά & Εκδηλώσεις:**\n• 🚂 **Μουτζούρης (Τρενάκι Πηλίου):** Διαδρομή Άνω Λεχώνια - Μηλιές κάθε Σαββατοκύριακο.\n• 🍇 **Γιορτή Τσίπουρου:** Τοπικές γευσιγνωσίες στις παραδοσιακές πλατείες.",
-                en: "🎭 **Events & Cultural Experiences:**\n• 🚂 **Moutzouris Steam Train:** Historical Pelion train route (Ano Lechonia - Milies) operating on weekends.\n• 🍇 **Tsipouro Tasting:** Traditional local gastronomy events in village squares.",
-                fr: "🎭 **Événements & Culture:**\n• 🚂 **Petit Train du Pélion:** Parcours historique Ano Lechonia - Milies les week-ends.\n• 🍇 **Fête du Tsipouro:** Dégustations locales sur les places des villages.",
-                de: "🎭 **Events & Kultur:**\n• 🚂 **Dampfbahn Pelion:** Historische Zugfahrt Ano Lechonia - Milies an Wochenenden.\n• 🍇 **Tsipouro-Fest:** Lokale Verkostungen auf den Dorfplätzen.",
-                es: "🎭 **Eventos y Cultura:**\n• 🚂 **Tren a Vapor de Pelión:** Ruta histórica Ano Lechonia - Milies los fines de semana.\n• 🍇 **Fiesta del Tsipouro:** Degustaciones en las plazas del pueblo.",
-                it: "🎭 **Eventi & Cultura:**\n• 🚂 **Trenino del Pelion:** Percorso storico Ano Lechonia - Milies nei fine settimana.\n• 🍇 **Festa del Tsipouro:** Degustazioni nelle piazze del paese.",
-                zh: "🎭 **文化与活动:**\n• 🚂 **皮利翁蒸汽小火车:** 周末运行于 Ano Lechonia - Milies 经典路线。\n• 🍇 **品酒节 (Tsipouro):** 广场传统美食与特产体验。",
-                ja: "🎭 **イベント & 文化:**\n• 🚂 **ペリオン蒸気機関車:** 週末運行（アノ・レホニア〜ミリエス）。\n• 🍇 **地酒地食フェス:** 村の広場で開催。",
-                ru: "🎭 **События и культура:**\n• 🚂 **Паровоз Мудзурис:** Исторический маршрут Ано Лехония - Мильес по выходным.\n• 🍇 **Фестиваль Ципуро:** Дегустации на традиционных площадях."
-            }
-        };
-
+        // Επίλυση title/desc στη σωστή γλώσσα για κάθε σημείο (fallback στα Αγγλικά αν λείπει κάτι)
+        Object.keys(db).forEach(lang => {
+            db[lang].categories = sharedCategories.map((sc, i) => ({
+                name: db[lang].catNames[i],
+                activeIndex: 0,
+                options: sc.options.map(opt => ({
+                    lat: opt.lat,
+                    lng: opt.lng,
+                    distKm: opt.distKm,
+                    timeMin: opt.timeMin,
+                    rating: opt.rating,
+                    url: opt.url,
+                    image: opt.image,
+                    title: opt.title[lang] || opt.title.en,
+                    desc: opt.desc[lang] || opt.desc.en
+                }))
+            }));
+        });
+        // 🚀 Εικόνα placeholder όταν λείπει το τοπικό αρχείο (π.χ. πριν ανέβουν οι φωτογραφίες)
+        const imgFallback = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 176'%3E%3Crect width='400' height='176' fill='%23e2e8f0'/%3E%3Ctext x='50%25' y='50%25' font-size='40' text-anchor='middle' dominant-baseline='middle'%3E📷%3C/text%3E%3C/svg%3E";
         function renderPlaces() {
-            const container = document.getElementById('places-container');
-            if (!container) return;
+            const container = document.getElementById('places-container'); if (!container) return;
             container.innerHTML = '';
-            const labels = uiTranslations[currentLang] || uiTranslations['el'];
+            const data = db[currentLang];
+            data.categories.forEach((category, cIdx) => {
+                const activeIdx = category.activeIndex; const activeOption = category.options[activeIdx];
+                let distanceText = data.gpsFormat.replace('{dist}', activeOption.distKm).replace('{time}', activeOption.timeMin);
 
-            placesData.forEach(place => {
-                const title = place.title[currentLang] || place.title['el'];
-                const desc = place.desc[currentLang] || place.desc['el'];
-                
-                const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${place.lat},${place.lng}`;
-                const dirUrl = isIOS 
-                    ? `http://maps.apple.com/?daddr=${place.lat},${place.lng}`
-                    : `https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}`;
-
+                // Λωρίδα εικόνων: όλες οι επιλογές σε μια σειρά, με οριζόντιο scroll αφής (swipe) + snap
                 let imagesHtml = '';
-                place.images.forEach((imgUrl, idx) => {
-                    imagesHtml += `
-                        <div class="snap-center shrink-0 w-full h-44 rounded-xl overflow-hidden bg-slate-100 relative">
-                            <img src="${imgUrl}" alt="${escapeHtml(title)} photo ${idx + 1}" loading="lazy" class="w-full h-full object-cover fade-in-img" />
-                        </div>
-                    `;
+                category.options.forEach((opt, oIdx) => {
+                    imagesHtml += `<img src="${opt.image}" data-idx="${oIdx}" loading="lazy" onerror="this.onerror=null;this.src='${imgFallback}';" class="w-full h-44 object-cover shrink-0 snap-center fade-in-img" alt="${escapeHtml(opt.title)}">`;
                 });
-
-                const card = document.createElement('div');
-                card.className = "bg-white rounded-2xl p-4 border border-slate-200/60 shadow-sm space-y-3";
-                card.innerHTML = `
-                    <div class="place-image-scroll flex gap-2 overflow-x-auto snap-x snap-mandatory no-scrollbar rounded-xl">
-                        ${imagesHtml}
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-800 text-sm tracking-tight">${escapeHtml(title)}</h4>
-                        <p class="text-xs text-slate-600 mt-1 leading-relaxed">${escapeHtml(desc)}</p>
-                    </div>
-                    <div class="flex gap-2 pt-1">
-                        <a href="${mapsUrl}" target="_blank" rel="noopener" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 py-2 rounded-xl text-xs font-semibold text-center transition flex justify-center items-center gap-1">
-                            ${labels.mapBtn}
-                        </a>
-                        <a href="${dirUrl}" target="_blank" rel="noopener" class="flex-1 bg-[#4A5D23] hover:bg-[#3d4d1c] text-white py-2 rounded-xl text-xs font-semibold text-center transition flex justify-center items-center gap-1 shadow-sm">
-                            ${labels.dirBtn}
-                        </a>
+                let buttonsHtml = '';
+                category.options.forEach((opt, oIdx) => {
+                    buttonsHtml += `<button data-idx="${oIdx}" aria-label="${escapeHtml(opt.title)}" class="place-dot-btn ${oIdx === activeIdx ? 'px-3 py-1 text-xs font-bold rounded-full bg-[#4A5D23] text-white shadow-sm' : 'px-3 py-1 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200'} transition">${oIdx + 1}</button>`;
+                });
+                container.innerHTML += `
+                    <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm">
+                        <div class="w-full h-44 overflow-x-auto no-scrollbar flex snap-x snap-mandatory place-image-scroll" data-cat="${cIdx}">${imagesHtml}</div>
+                        <div class="p-4">
+                            <div class="flex gap-1.5 justify-center mb-3 pb-2 border-b border-slate-50 place-dots" data-cat="${cIdx}">${buttonsHtml}</div>
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-[10px] font-bold text-[#4A5D23] uppercase tracking-wider">${escapeHtml(category.name)}</span>
+                                <span class="text-xs font-semibold text-amber-500 place-rating" data-cat="${cIdx}">${activeOption.rating}</span>
+                            </div>
+                            <h4 class="font-bold text-slate-800 text-sm h-5 truncate place-title" data-cat="${cIdx}">${escapeHtml(activeOption.title)}</h4>
+                            <p class="text-xs text-slate-500 mt-1 leading-relaxed h-12 overflow-hidden place-desc" data-cat="${cIdx}">${escapeHtml(activeOption.desc)}</p>
+                            <div class="mt-3 pt-3 border-t border-slate-50 flex items-center justify-between text-[11px] font-semibold text-slate-400">
+                                <span class="place-distance" data-cat="${cIdx}">${distanceText}</span>
+                                <a href="${activeOption.url}" target="_blank" rel="noopener" class="text-[#4A5D23] font-bold hover:underline place-gps-link" data-cat="${cIdx}">${data.gpsNav}</a>
+                            </div>
+                        </div>
                     </div>
                 `;
-                container.appendChild(card);
+            });
+            setupPlaceGalleries();
+        }
+        // Ενημερώνει μόνο το κείμενο/κουκίδες μιας κατηγορίας (ΧΩΡΙΣ πλήρες re-render,
+        // ώστε να μη "πηδάει" το scroll των εικόνων ενώ ο επισκέπτης κάνει swipe)
+        function updatePlaceInfo(cIdx) {
+            const data = db[currentLang];
+            const category = data.categories[cIdx];
+            const activeOption = category.options[category.activeIndex];
+            const distanceText = data.gpsFormat.replace('{dist}', activeOption.distKm).replace('{time}', activeOption.timeMin);
+            const ratingEl = document.querySelector(`.place-rating[data-cat="${cIdx}"]`);
+            const titleEl = document.querySelector(`.place-title[data-cat="${cIdx}"]`);
+            const descEl = document.querySelector(`.place-desc[data-cat="${cIdx}"]`);
+            const distEl = document.querySelector(`.place-distance[data-cat="${cIdx}"]`);
+            const gpsEl = document.querySelector(`.place-gps-link[data-cat="${cIdx}"]`);
+            if (ratingEl) ratingEl.textContent = activeOption.rating;
+            if (titleEl) titleEl.textContent = activeOption.title;
+            if (descEl) descEl.textContent = activeOption.desc;
+            if (distEl) distEl.textContent = distanceText;
+            if (gpsEl) gpsEl.href = activeOption.url;
+            document.querySelectorAll(`.place-dots[data-cat="${cIdx}"] .place-dot-btn`).forEach((btn, i) => {
+                btn.className = 'place-dot-btn transition ' + (i === category.activeIndex
+                    ? 'px-3 py-1 text-xs font-bold rounded-full bg-[#4A5D23] text-white shadow-sm'
+                    : 'px-3 py-1 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200');
             });
         }
-
-        function updateStaticTexts() {
-            const t = uiTranslations[currentLang] || uiTranslations['el'];
-            
-            document.getElementById('ui-subtitle').textContent = t.subtitle;
-            document.getElementById('ui-gps-btn').textContent = t.gpsBtn;
-            document.getElementById('ui-section-places').textContent = t.placesHeader;
-            document.getElementById('ui-section-chat').textContent = t.chatHeader;
-            document.getElementById('ui-whatsapp-text').textContent = t.whatsapp;
-            document.getElementById('btn-tag-weather').textContent = t.weatherBtn;
-            document.getElementById('btn-tag-events').textContent = t.eventsBtn;
-            document.getElementById('btn-tag-rules').textContent = t.rulesBtn;
-            document.getElementById('btn-tag-taxi').textContent = t.taxiBtn;
-            document.getElementById('chat-input').placeholder = t.inputPlaceholder;
-
-            renderPlaces();
+        // Συνδέει το swipe (IntersectionObserver) και τα κουμπιά-αριθμούς με τη λωρίδα εικόνων κάθε κατηγορίας
+        function setupPlaceGalleries() {
+            const data = db[currentLang];
+            document.querySelectorAll('.place-image-scroll').forEach(scrollEl => {
+                const cIdx = parseInt(scrollEl.dataset.cat, 10);
+                const category = data.categories[cIdx];
+                const images = Array.from(scrollEl.querySelectorAll('img'));
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+                            const idx = parseInt(entry.target.dataset.idx, 10);
+                            if (idx !== category.activeIndex) {
+                                category.activeIndex = idx;
+                                updatePlaceInfo(cIdx);
+                            }
+                        }
+                    });
+                }, { root: scrollEl, threshold: [0.6] });
+                images.forEach(img => observer.observe(img));
+            });
+            document.querySelectorAll('.place-dot-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const dotsWrap = btn.closest('.place-dots');
+                    const cIdx = parseInt(dotsWrap.dataset.cat, 10);
+                    const oIdx = parseInt(btn.dataset.idx, 10);
+                    const scrollEl = document.querySelector(`.place-image-scroll[data-cat="${cIdx}"]`);
+                    const img = scrollEl ? scrollEl.querySelectorAll('img')[oIdx] : null;
+                    if (img) img.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                });
+            });
         }
-
-        function appendMessage(sender, text) {
-            const chatBox = document.getElementById('chat-box');
-            if (!chatBox) return;
-
-            const isUser = sender === 'user';
-            const msgDiv = document.createElement('div');
-            msgDiv.className = `flex ${isUser ? 'justify-end' : 'justify-start'} fade-in-img`;
-
-            const bubble = document.createElement('div');
-            bubble.className = isUser 
-                ? "bg-[#4A5D23] text-white p-3.5 rounded-2xl rounded-tr-none text-xs max-w-[85%] shadow-sm leading-relaxed"
-                : "bg-white text-slate-800 p-3.5 rounded-2xl rounded-tl-none text-xs max-w-[85%] border border-slate-200/60 shadow-sm leading-relaxed space-y-2";
-
-            let formattedText = escapeHtml(text).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
-            bubble.innerHTML = formattedText;
-
-            msgDiv.appendChild(bubble);
-            chatBox.appendChild(msgDiv);
-            chatBox.scrollTop = chatBox.scrollHeight;
-        }
-
-        function showTypingIndicator() {
-            const chatBox = document.getElementById('chat-box');
-            const typingDiv = document.createElement('div');
-            typingDiv.id = 'typing-indicator';
-            typingDiv.className = 'flex justify-start fade-in-img';
-            typingDiv.innerHTML = `
-                <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-slate-200/60 shadow-sm flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 bg-[#4A5D23] rounded-full typing-dot"></span>
-                    <span class="w-1.5 h-1.5 bg-[#4A5D23] rounded-full typing-dot"></span>
-                    <span class="w-1.5 h-1.5 bg-[#4A5D23] rounded-full typing-dot"></span>
+        function updateUI(lang) {
+            currentLang = lang; const data = db[lang];
+            document.documentElement.lang = lang;
+            const selectEl = document.getElementById('lang-select');
+            if (selectEl && langMenuTexts[lang]) {
+                Array.from(selectEl.options).forEach(option => {
+                    if (langMenuTexts[lang][option.value]) {
+                        option.text = langMenuTexts[lang][option.value];
+                    }
+                });
+            }
+            document.getElementById('ui-subtitle').innerText = data.subtitle;
+            document.getElementById('ui-section-places').innerText = data.secPlaces;
+            document.getElementById('ui-section-chat').innerText = data.secChat;
+            document.getElementById('chat-input').placeholder = data.placeholder;
+            document.getElementById('btn-tag-weather').innerText = data.tags.weather;
+            document.getElementById('btn-tag-events').innerText = data.tags.events;
+            document.getElementById('btn-tag-rules').innerText = data.tags.rules;
+            document.getElementById('btn-tag-taxi').innerText = data.tags.taxi;
+            document.getElementById('chat-box').innerHTML = `
+                <div class="flex items-start">
+                    <div class="bg-slate-100 text-slate-800 text-sm p-3.5 rounded-2xl rounded-tl-none max-w-[85%] shadow-sm leading-relaxed">${escapeHtml(data.welcome)}</div>
                 </div>
             `;
-            chatBox.appendChild(typingDiv);
-            chatBox.scrollTop = chatBox.scrollHeight;
+            renderPlaces();
+            try { localStorage.setItem('agh_preferred_lang', lang); } catch (e) { /* private browsing κλπ. - αγνοείται */ }
         }
-
-        function hideTypingIndicator() {
-            const indicator = document.getElementById('typing-indicator');
-            if (indicator) indicator.remove();
-        }
-
-        function speak(text) {
+        // 🚀 ΦΩΝΗ: Google Translate TTS πρώτα (πιο φυσικός ήχος),
+        // με αυτόματο fallback στη φωνή του browser αν αποτύχει.
+        function speakWithBrowser(cleanText) {
             if (!('speechSynthesis' in window)) return;
-            try {
-                window.speechSynthesis.cancel();
-                const cleanText = text.replace(/[\*\#\_\-\•]/g, '');
-                const utterance = new SpeechSynthesisUtterance(cleanText);
-                utterance.lang = currentLang === 'el' ? 'el-GR' : (currentLang === 'en' ? 'en-US' : currentLang);
-                
-                const chosenVoice = getBestVoice(utterance.lang.substring(0, 2));
-                if (chosenVoice) utterance.voice = chosenVoice;
-
-                utterance.rate = 0.95;
-                utterance.pitch = 1.0;
-                window.speechSynthesis.speak(utterance);
-            } catch (err) {
-                console.error("Speech synthesis error:", err);
-            }
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(cleanText);
+            const langMap = { el: 'el', en: 'en', fr: 'fr', de: 'de', es: 'es', it: 'it', zh: 'zh', ja: 'ja', ru: 'ru' };
+            const voice = getBestVoice(langMap[currentLang] || 'el');
+            if (voice) utterance.voice = voice;
+            utterance.lang = { el: 'el-GR', en: 'en-US', fr: 'fr-FR', de: 'de-DE', es: 'es-ES', it: 'it-IT', zh: 'zh-CN', ja: 'ja-JP', ru: 'ru-RU' }[currentLang] || 'el-GR';
+            utterance.rate = 0.95;   // ελαφρώς πιο αργά από το default -> πιο φυσικό
+            utterance.pitch = 1.05;  // ελαφρώς πιο ψηλός τόνος -> πιο γλυκιά/ζεστή χροιά
+            window.speechSynthesis.speak(utterance);
         }
-
-        function generateAIResponse(query) {
-            const q = query.toLowerCase();
-
-            if (q.includes('rule') || q.includes('κανον') || q.includes('check') || q.includes('quiet') || q.includes('ησυχ') || q.includes('smoke') || q.includes('καπν')) {
-                return knowledgeBase.rules[currentLang] || knowledgeBase.rules['el'];
+        // Φωνητική διόρθωση αγγλικών όρων που δεν προφέρονται σωστά από την ελληνική φωνή TTS
+        function fixSpeechPronunciation(text, lang) {
+            // Ομαδοποίηση μεγάλων αριθμών (π.χ. κωδικός Wi-Fi, τηλέφωνα - ακόμα κι αν έχουν
+            // ενδιάμεση παύλα) ανά ΔΥΟ ψηφία, ώστε το TTS να τα διαβάζει φυσικά
+            // (π.χ. "22, 17, 08, 11") αντί είτε σαν έναν τεράστιο αριθμό, είτε "συλλαβιστά"
+            // ψηφίο-ψηφίο. Ισχύει σε όλες τις γλώσσες.
+            text = text.replace(/\d[\d-]{2,}\d/g, (match) => {
+                const digitsOnly = match.replace(/[^\d]/g, '');
+                return (digitsOnly.match(/\d{1,2}/g) || []).join(', ');
+            });
+            if (lang !== 'el') return text;
+            return text
+                .replace(/check-?in/gi, 'τσέκ ιν')
+                .replace(/check-?out/gi, 'τσέκ άουτ');
+        }
+        // Χωρίζει ένα μεγάλο κείμενο σε φυσικά κομμάτια (ολόκληρες προτάσεις, όχι κομμένες λέξεις),
+        // κάθε ένα μέχρι ~180 χαρακτήρες, ώστε το Google TTS να τα διαβάζει καθαρά ένα-ένα.
+        function splitIntoSpeechChunks(text, maxLen = 180) {
+            const sentences = text.match(/[^.!?;\n]+[.!?;\n]*/g) || [text];
+            const chunks = [];
+            let current = '';
+            for (const s of sentences) {
+                if (current && (current.length + s.length) > maxLen) {
+                    chunks.push(current.trim());
+                    current = s;
+                } else {
+                    current += s;
+                }
             }
-            if (q.includes('taxi') || q.includes('ταξι') || q.includes('cab') || q.includes('transport') || q.includes('μεταφορ')) {
-                return knowledgeBase.taxi[currentLang] || knowledgeBase.taxi['el'];
-            }
-            if (q.includes('event') || q.includes('εκδηλ') || q.includes('μουτζουρ') || q.includes('train') || q.includes('τρεν') || q.includes('γεγονο')) {
-                return knowledgeBase.events[currentLang] || knowledgeBase.events['el'];
-            }
-            if (q.includes('weather') || q.includes('καιρ') || q.includes('temp') || q.includes('βροχ') || q.includes('rain') || q.includes('sun') || q.includes('ζεστ')) {
-                const weatherT = {
-                    el: `🌤️ Ο καιρός στον Βόλο/Πήλιο αυτή τη στιγμή δείχνει **${liveTemperature}°C**. Ιδανικές συνθήκες για εξόρμηση!`,
-                    en: `🌤️ Current weather in Volos/Pelion is **${liveTemperature}°C**. Great conditions for exploring!`,
-                    fr: `🌤️ La température actuelle à Volos/Pélion est de **${liveTemperature}°C**. Temps idéal pour explorer !`,
-                    de: `🌤️ Das aktuelle Wetter in Volos/Pelion beträgt **${liveTemperature}°C**. Perfekt für Ausflüge!`,
-                    es: `🌤️ El tiempo actual en Volos/Pelión es de **${liveTemperature}°C**. ¡Ideal para explorar!`,
-                    it: `🌤️ Il meteo attuale a Volos/Pelion è di **${liveTemperature}°C**. Ottime condizioni per esplorare!`,
-                    zh: `🌤️ 沃洛斯/皮利翁当前气温为 **${liveTemperature}°C**。非常适合出行！`,
-                    ja: `🌤️ 現在のボロス/ペリオンの気温は **${liveTemperature}°C** です。観光に最適な天候です！`,
-                    ru: `🌤️ Текущая температура в Волосе/Пелионе **${liveTemperature}°C**. Отличная погода для прогулок!`
-                };
-                return weatherT[currentLang] || weatherT['el'];
-            }
-
-            const genericReplies = {
-                el: `Σας ευχαριστώ για την ερώτηση! 🌿 Για περισσότερες λεπτομέρειες σχετικά με το «${query}», μπορείτε να επικοινωνήσετε απευθείας μαζί μας μέσω WhatsApp!`,
-                en: `Thank you for asking! 🌿 For more specific details about "${query}", feel free to message us directly on WhatsApp!`,
-                fr: `Merci pour votre question ! 🌿 Pour plus de détails sur « ${query} », contactez-nous directement sur WhatsApp !`,
-                de: `Vielen Dank für Ihre Anfrage! 🌿 Für weitere Details zu „${query}“ kontaktieren Sie uns gerne direkt über WhatsApp!`,
-                es: `¡Gracias por tu pregunta! 🌿 Para más detalles sobre "${query}", ¡no dudes en contactarnos directamente por WhatsApp!`,
-                it: `Grazie per la domanda! 🌿 Per maggiori dettagli su "${query}", contattaci direttamente su WhatsApp!`,
-                zh: `感谢您的咨询！🌿 关于“${query}”的更多详情，欢迎随时通过 WhatsApp 联系我们！`,
-                ja: `ご質問ありがとうございます！🌿 「${query}」の詳細については、WhatsAppよりお気軽にお問い合わせください！`,
-                ru: `Спасибо за ваш вопрос! 🌿 Для получения подробной информации о «${query}» свяжитесь с нами в WhatsApp!`
+            if (current.trim()) chunks.push(current.trim());
+            return chunks;
+        }
+        // Παίζει διαδοχικά μια λίστα κομματιών κειμένου μέσω Google TTS, το ένα μετά το άλλο.
+        function playSpeechChunks(chunks, index, fullTextForFallback) {
+            if (index >= chunks.length) return;
+            let langCode = { el: 'el', en: 'en', fr: 'fr', de: 'de', es: 'es', it: 'it', zh: 'zh-CN', ja: 'ja', ru: 'ru' }[currentLang] || 'el';
+            let url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=${langCode}&q=${encodeURIComponent(chunks[index])}`;
+            sharedAudio.pause();
+            sharedAudio.src = url;
+            sharedAudio.load();
+            sharedAudio.onended = () => playSpeechChunks(chunks, index + 1, fullTextForFallback);
+            sharedAudio.onerror = () => {
+                if (index === 0) speakWithBrowser(fullTextForFallback);
             };
-
-            return genericReplies[currentLang] || genericReplies['el'];
+            const playPromise = sharedAudio.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => { if (index === 0) speakWithBrowser(fullTextForFallback); });
+            }
         }
-
-        function handleSend() {
-            const input = document.getElementById('chat-input');
-            const text = input.value.trim();
-            if (!text) return;
-
-            appendMessage('user', text);
-            input.value = '';
-
-            showTypingIndicator();
-            setTimeout(() => {
-                hideTypingIndicator();
-                const reply = generateAIResponse(text);
-                appendMessage('bot', reply);
-                speak(reply);
-            }, 600);
+        function speak(text, source = null) {
+            let cleanText = text.replace(/<[^>]*>/g, '').replace(/\*\*/g, '').trim();
+            if (!cleanText) return;
+            cleanText = fixSpeechPronunciation(cleanText, currentLang);
+            // Το ElevenLabs (φυσική φωνή, χρεώνεται ανά χαρακτήρα) χρησιμοποιείται ΜΟΝΟ για τις
+            // απαντήσεις του Varnavas_Chat.ai. Οι έτοιμες κατηγορίες μας (wifi, κανόνες, ταξί, κλπ.)
+            // συνεχίζουν να ακούγονται δωρεάν, χωρίς κατανάλωση χαρακτήρων.
+            if (source === 'varnavas') {
+                speakWithElevenLabs(cleanText);
+            } else {
+                speakFallback(cleanText);
+            }
         }
-
-        function triggerQuickAction(type) {
-            let userText = "";
-            if (type === 'weather') userText = currentLang === 'el' ? 'Πώς είναι ο καιρός;' : 'How is the weather?';
-            if (type === 'events') userText = currentLang === 'el' ? 'Ποια events γίνονται;' : 'What events are taking place?';
-            if (type === 'rules') userText = currentLang === 'el' ? 'Ποιοι είναι οι κανόνες;' : 'What are the house rules?';
-            if (type === 'taxi') userText = currentLang === 'el' ? 'Χρειάζομαι ταξί.' : 'I need a taxi.';
-
-            appendMessage('user', userText);
-            showTypingIndicator();
-
-            setTimeout(() => {
-                hideTypingIndicator();
-                const reply = knowledgeBase[type] ? (knowledgeBase[type][currentLang] || knowledgeBase[type]['el']) : generateAIResponse(userText);
-                appendMessage('bot', reply);
-                speak(reply);
-            }, 500);
+        // Κύρια φωνή: ElevenLabs (φυσική, ανθρώπινη), μέσω του κρυφού backend μας (/api/speak).
+        // Αν αποτύχει για οποιονδήποτε λόγο (π.χ. εξαντλημένο όριο χαρακτήρων, χωρίς internet),
+        // πέφτουμε αυτόματα στο παλιό, δωρεάν σύστημα - ποτέ δεν μένει σιωπηλός ο επισκέπτης.
+        async function speakWithElevenLabs(cleanText) {
+            try {
+                const response = await fetch('/api/speak', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text: cleanText })
+                });
+                if (!response.ok) {
+                    const errBody = await response.json().catch(() => ({}));
+                    console.error('ElevenLabs error - status:', response.status, '| detail:', errBody.detail || errBody.error);
+                    throw new Error('bad status: ' + response.status);
+                }
+                const blob = await response.blob();
+                const objectUrl = URL.createObjectURL(blob);
+                sharedAudio.pause();
+                sharedAudio.src = objectUrl;
+                sharedAudio.load();
+                sharedAudio.onended = () => URL.revokeObjectURL(objectUrl);
+                sharedAudio.onerror = () => { URL.revokeObjectURL(objectUrl); speakFallback(cleanText); };
+                const playPromise = sharedAudio.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(() => { URL.revokeObjectURL(objectUrl); speakFallback(cleanText); });
+                }
+            } catch (e) {
+                console.error('ElevenLabs TTS error:', e);
+                speakFallback(cleanText);
+            }
         }
-
-        function initVoiceRecognition() {
-            const voiceBtn = document.getElementById('voice-btn');
-            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-            if (!SpeechRecognition) {
-                voiceBtn.style.display = 'none';
+        // Εφεδρικό (δωρεάν) σύστημα φωνής - το ίδιο που δούλευε πριν το ElevenLabs.
+        function speakFallback(cleanText) {
+            // ΣΗΜΑΝΤΙΚΗ ΔΙΟΡΘΩΣΗ ΓΙΑ iOS: αν το Google TTS αποτύχει, το fallback στη φωνή του
+            // browser γινόταν μέσα σε ΑΣΥΓΧΡΟΝΟ callback (onerror/catch) - δηλαδή εκτός της αρχικής
+            // χειρονομίας του χρήστη. Το iOS Safari αρνείται σιωπηλά να μιλήσει σε αυτή την περίπτωση
+            // (το Android/Chrome είναι πιο ανεκτικό, γι' αυτό εκεί δούλευε). Λύση: στο iOS πηγαίνουμε
+            // ΑΠΕΥΘΕΙΑΣ και ΣΥΓΧΡΟΝΑ στη φωνή συστήματος, μέσα στην ίδια τη χειρονομία.
+            if (isIOS) {
+                speakWithBrowser(cleanText);
                 return;
             }
-
-            const recognition = new SpeechRecognition();
-            recognition.continuous = false;
-            recognition.interimResults = false;
-
-            voiceBtn.addEventListener('click', () => {
-                unlockSpeech();
-                recognition.lang = currentLang === 'el' ? 'el-GR' : (currentLang === 'en' ? 'en-US' : currentLang);
-                try {
-                    recognition.start();
-                    voiceBtn.classList.add('bg-red-100', 'text-red-600', 'animate-pulse');
-                } catch (e) {
-                    recognition.stop();
-                }
-            });
-
-            recognition.onresult = (event) => {
-                const transcript = event.results[0][0].transcript;
-                document.getElementById('chat-input').value = transcript;
-                voiceBtn.classList.remove('bg-red-100', 'text-red-600', 'animate-pulse');
-                handleSend();
-            };
-
-            recognition.onerror = () => {
-                voiceBtn.classList.remove('bg-red-100', 'text-red-600', 'animate-pulse');
-            };
-
-            recognition.onend = () => {
-                voiceBtn.classList.remove('bg-red-100', 'text-red-600', 'animate-pulse');
-            };
+            const chunks = splitIntoSpeechChunks(cleanText);
+            playSpeechChunks(chunks, 0, cleanText);
         }
-
-        document.addEventListener('DOMContentLoaded', async () => {
-            fetchLiveWeather();
-
-            const langSelect = document.getElementById('lang-select');
-            langSelect.addEventListener('change', (e) => {
-                currentLang = e.target.value;
-                updateStaticTexts();
-            });
-
-            document.getElementById('send-btn').addEventListener('click', () => {
+        function appendMessage(text, isUser = false, source = null) {
+            const chatBox = document.getElementById('chat-box'); if (!chatBox) return;
+            const messageWrapper = document.createElement('div');
+            messageWrapper.className = isUser ? 'flex items-start justify-end' : 'flex flex-col items-start gap-1';
+            const bubbleClass = isUser ? 'bg-[#4A5D23] text-white text-sm p-3.5 rounded-2xl rounded-tr-none max-w-[85%] shadow-sm' : 'bg-slate-100 text-slate-800 text-sm p-3.5 rounded-2xl rounded-tl-none max-w-[85%] shadow-sm leading-relaxed';
+            // Το κείμενο του χρήστη περνάει πάντα από escapeHtml (προστασία από XSS).
+            // Οι απαντήσεις του bot προέρχονται από τη δική μας βάση δεδομένων και είναι ασφαλείς.
+            const safeText = isUser ? escapeHtml(text) : text;
+            if (isUser) {
+                messageWrapper.innerHTML = `<div class="${bubbleClass}"><div>${safeText}</div></div>`;
+            } else {
+                // Όταν η απάντηση έρχεται από το ζωντανό AI fallback (όχι από τις έτοιμες
+                // κατηγορίες μας), δείχνουμε καθαρά μια ταμπέλα "🤖 Varnavas_Chat.ai" πάνω
+                // από τη φούσκα, ώστε ο επισκέπτης να ξέρει ότι απάντησε ο "ελεύθερος" βοηθός.
+                const labelHtml = source === 'varnavas'
+                    ? `<span class="text-[10px] font-bold text-[#4A5D23] ml-1">🤖 Varnavas_Chat.ai</span>`
+                    : '';
+                // ΣΗΜΑΝΤΙΚΟ ΓΙΑ iOS SAFARI: το autoplay ήχου μέσω setTimeout μπλοκάρεται μερικές φορές
+                // ακόμα κι όταν το audio έχει "ξεκλειδωθεί". Το κουμπί 🔊 είναι ΑΜΕΣΟ πάτημα χρήστη,
+                // άρα το iOS ΠΑΝΤΑ επιτρέπει την αναπαραγωγή όταν ξεκινά από εκεί - 100% αξιόπιστο fallback.
+                messageWrapper.innerHTML = `
+                    ${labelHtml}
+                    <div class="flex items-start gap-1.5 w-full">
+                        <div class="${bubbleClass}"><div>${safeText}</div></div>
+                        <button aria-label="Άκουσε ξανά" title="Άκουσε ξανά" type="button" class="replay-voice-btn shrink-0 w-8 h-8 mt-0.5 rounded-full bg-slate-100 hover:bg-[#4A5D23]/10 text-slate-500 hover:text-[#4A5D23] flex items-center justify-center text-sm transition">🔊</button>
+                    </div>
+                `;
+                const replayBtn = messageWrapper.querySelector('.replay-voice-btn');
+                if (replayBtn) {
+                    replayBtn.addEventListener('click', () => {
+                        unlockSpeech();
+                        speak(text, source);
+                    });
+                }
+            }
+            chatBox.appendChild(messageWrapper);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            if (!isUser) speak(text, source);
+        }
+        function showTyping() {
+            const chatBox = document.getElementById('chat-box'); if (!chatBox) return;
+            const wrapper = document.createElement('div');
+            wrapper.id = 'typing-indicator';
+            wrapper.className = 'flex items-start';
+            wrapper.innerHTML = `<div class="bg-slate-100 text-slate-400 text-sm px-4 py-3.5 rounded-2xl rounded-tl-none shadow-sm flex gap-1">
+                <span class="w-1.5 h-1.5 bg-slate-400 rounded-full typing-dot"></span>
+                <span class="w-1.5 h-1.5 bg-slate-400 rounded-full typing-dot"></span>
+                <span class="w-1.5 h-1.5 bg-slate-400 rounded-full typing-dot"></span>
+            </div>`;
+            chatBox.appendChild(wrapper);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+        function hideTyping() {
+            const el = document.getElementById('typing-indicator');
+            if (el) el.remove();
+        }
+        // 🚀 ΑΠΟΤΟΝΙΣΤΗΣ: Δεν κολλάει ποτέ από κεφαλαία ή τόνους
+        async function handleAIResponse(userText) {
+            try {
+                const cleanText = userText.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+                const data = db[currentLang];
+                const check = (keys) => keys.some(kw => cleanText.includes(kw.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()));
+                if (check(data.keywords.wifi)) return data.wifi;
+                if (check(data.keywords.food)) return data.food;
+                if (check(data.keywords.beach)) return data.beach;
+                if (check(data.keywords.weather)) return { text: data.weather.text.replace('{temp}', liveTemperature) };
+                if (check(data.keywords.events)) return data.events;
+                if (check(data.keywords.rules)) return data.rules;
+                if (check(data.keywords.taxi)) return data.taxi;
+                if (check(data.keywords.excursion)) return data.excursion;
+                if (check(data.keywords.nightlife)) return data.nightlife;
+                if (check(data.keywords.hiking)) return data.hiking;
+                // Καμία αντιστοίχιση στις έτοιμες κατηγορίες μας -> ζωντανή απάντηση AI
+                // μέσω του δικού μας ασφαλούς proxy (/api/ask). ΚΑΝΕΝΑ API key δεν υπάρχει
+                // ή στέλνεται από αυτόν τον client-side κώδικα.
+                return await askLiveAI(userText);
+            } catch (e) {
+                console.error("Parse Error:", e);
+                return { text: db[currentLang].failMessage };
+            }
+        }
+        // 🚀 ΖΩΝΤΑΝΗ ΑΠΑΝΤΗΣΗ AI (fallback): καλεί το δικό μας Cloudflare Pages Function
+        // (/api/ask), το οποίο κρατά το πραγματικό API key κρυφό στον server. Αν αποτύχει
+        // για οποιονδήποτε λόγο (server down, χωρίς internet, δεν έχει ρυθμιστεί ακόμα το
+        // key), επιστρέφει απλά το τυπικό μήνυμα άγνοιας - ποτέ δεν σπάει η εμπειρία χρήστη.
+        async function askLiveAI(userText) {
+            try {
+                const response = await fetch('/api/ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: userText, lang: currentLang })
+                });
+                const data = await response.json().catch(() => ({}));
+                if (!response.ok) {
+                    // ΠΡΟΣΩΡΙΝΟ (διάγνωση): δείχνουμε στην κονσόλα το ακριβές μήνυμα του server/Gemini
+                    console.error('Live AI error - status:', response.status, '| server detail:', data.error, data.detail);
+                    throw new Error('bad status: ' + response.status);
+                }
+                if (data && data.reply && data.reply.trim()) {
+                    return { text: data.reply.trim(), source: 'varnavas' };
+                }
+                throw new Error('empty reply');
+            } catch (e) {
+                console.error('Live AI error:', e);
+                return { text: db[currentLang].failMessage };
+            }
+        }
+        function setInputBusy(busy) {
+            const inputEl = document.getElementById('chat-input');
+            const sendBtnEl = document.getElementById('send-btn');
+            inputEl.disabled = busy;
+            sendBtnEl.disabled = busy;
+        }
+        async function sendMessage() {
+            unlockSpeech();
+            const inputEl = document.getElementById('chat-input');
+            const msg = inputEl.value.trim();
+            if (!msg) return;
+            appendMessage(msg, true);
+            inputEl.value = '';
+            setInputBusy(true);
+            showTyping();
+            const startedAt = Date.now();
+            const reply = await handleAIResponse(msg);
+            // Ελάχιστη καθυστέρηση 550ms ΜΟΝΟ αν η απάντηση ήταν στιγμιαία (τοπική αντιστοίχιση),
+            // ώστε να μοιάζει φυσικό. Αν χρειάστηκε δίκτυο (ζωντανό AI), δεν προσθέτουμε καθυστέρηση.
+            const remaining = 550 - (Date.now() - startedAt);
+            if (remaining > 0) await new Promise(r => setTimeout(r, remaining));
+            hideTyping();
+            appendMessage(reply.text, false, reply.source);
+            setInputBusy(false);
+            inputEl.focus();
+        }
+        window.triggerQuickAction = function(actionType) {
+            unlockSpeech();
+            const data = db[currentLang]; let tagText = ""; let replyText = "";
+            if (actionType === 'weather') { tagText = data.tags.weather; replyText = data.weather.text.replace('{temp}', liveTemperature); }
+            else if (actionType === 'events') { tagText = data.tags.events; replyText = data.events.text; }
+            else if (actionType === 'rules') { tagText = data.tags.rules; replyText = data.rules.text; }
+            else if (actionType === 'taxi') { tagText = data.tags.taxi; replyText = data.taxi.text; }
+            appendMessage(tagText, true);
+            setInputBusy(true);
+            showTyping();
+            setTimeout(() => {
+                hideTyping();
+                appendMessage(replyText, false);
+                setInputBusy(false);
+            }, 550);
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            const chatInputEl = document.getElementById('chat-input');
+            const sendBtnEl = document.getElementById('send-btn');
+            const langSelectEl = document.getElementById('lang-select');
+            langSelectEl.addEventListener('change', (e) => { updateUI(e.target.value); });
+            sendBtnEl.addEventListener('click', sendMessage);
+            chatInputEl.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(); });
+            const voiceBtnEl = document.getElementById('voice-btn');
+            voiceBtnEl.addEventListener('click', () => {
                 unlockSpeech();
-                handleSend();
-            });
-
-            document.getElementById('chat-input').addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    unlockSpeech();
-                    handleSend();
+                try {
+                    const SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+                    if (SpeechRecognition) {
+                        const recognition = new SpeechRecognition();
+                        recognition.interimResults = false;
+                        let voiceLang = { el: 'el-GR', en: 'en-US', fr: 'fr-FR', de: 'de-DE', es: 'es-ES', it: 'it-IT', zh: 'zh-CN', ja: 'ja-JP', ru: 'ru-RU' }[currentLang] || 'en-US';
+                        recognition.lang = voiceLang;
+                        recognition.onstart = () => {
+                            voiceBtnEl.classList.add('bg-red-100', 'text-red-600', 'animate-pulse');
+                            chatInputEl.placeholder = db[currentLang].listening;
+                        };
+                        recognition.onresult = (event) => {
+                            chatInputEl.value = event.results[0][0].transcript;
+                            sendMessage();
+                        };
+                        recognition.onend = () => {
+                            voiceBtnEl.classList.remove('bg-red-100', 'text-red-600', 'animate-pulse');
+                            chatInputEl.placeholder = db[currentLang].placeholder;
+                        };
+                        recognition.onerror = () => {
+                            voiceBtnEl.classList.remove('bg-red-100', 'text-red-600', 'animate-pulse');
+                            chatInputEl.placeholder = db[currentLang].placeholder;
+                        };
+                        recognition.start();
+                    } else {
+                        alert("Speech recognition is blocked inside Viber/WhatsApp in-app browsers. Please open this page in Chrome or Safari!");
+                    }
+                } catch (error) {
+                    alert("Please open the page in Chrome or Safari to use voice commands!");
                 }
             });
-
-            updateStaticTexts();
-            initVoiceRecognition();
-
-            setTimeout(() => {
-                const welcome = uiTranslations[currentLang].welcomeMsg;
-                appendMessage('bot', welcome);
-            }, 300);
+            // Επαναφορά της προηγούμενης προτίμησης γλώσσας του επισκέπτη (αν υπάρχει)
+            let initialLang = 'el';
+            try {
+                const saved = localStorage.getItem('agh_preferred_lang');
+                if (saved && db[saved]) initialLang = saved;
+            } catch (e) { /* private browsing κλπ. - αγνοείται */ }
+            langSelectEl.value = initialLang;
+            updateUI(initialLang);
+            fetchLiveWeather();
+            // Ανανέωση καιρού κάθε 15 λεπτά ώστε η θερμοκρασία να μένει ενημερωμένη
+            setInterval(fetchLiveWeather, 15 * 60 * 1000);
         });
     </script>
 </body>
