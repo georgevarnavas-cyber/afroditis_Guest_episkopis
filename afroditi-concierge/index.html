@@ -298,25 +298,6 @@
         @keyframes pulse{50%{opacity:.5}}
         @keyframes bounce{0%,to{animation-timing-function:cubic-bezier(.8,0,1,1);transform:translateY(-25%)}50%{animation-timing-function:cubic-bezier(0,0,.2,1);transform:none}}
         
-        /* Συμπλήρωση utility classes που λείπουν από το προ-μεταγλωττισμένο Tailwind CSS
-           (χρησιμοποιούνται μόνο μέσα σε JS templates, άρα δεν "πιάστηκαν" στο build).
-           Η .h-full είναι κρίσιμη: χωρίς αυτήν οι φωτογραφίες των εμπειριών δεν παίρνουν
-           σωστό ύψος μέσα στο γονικό τους container. */
-        .h-full{height:100%}
-        .p-3{padding:calc(var(--spacing) * 3)}
-        .pt-1{padding-top:var(--spacing)}
-        .text-center{text-align:center}
-        .bg-\[\#10b981\]{background-color:#10b981}
-        .bg-white\/20{background-color:#ffffff33}
-        @supports (color:color-mix(in lab, red, red)){.bg-white\/20{background-color:color-mix(in oklab, var(--color-white) 20%, transparent)}}
-        .inline-flex{display:inline-flex}
-        .mb-0\.5{margin-bottom:calc(var(--spacing) * .5)}
-        .my-1{margin-block:var(--spacing)}
-        .px-2{padding-inline:calc(var(--spacing) * 2)}
-        .py-0\.5{padding-block:calc(var(--spacing) * .5)}
-        .rounded-md{border-radius:.375rem}
-        :where(.space-y-5>:not(:last-child)){--tw-space-y-reverse:0;margin-block-start:calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));margin-block-end:calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)))}
-
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .fade-in-img { animation: fadeIn 0.4s ease-in-out; }
