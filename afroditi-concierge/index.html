@@ -787,7 +787,7 @@
             if (voice) utterance.voice = voice;
             utterance.lang = { el: 'el-GR', en: 'en-US', fr: 'fr-FR', de: 'de-DE', es: 'es-ES', it: 'it-IT', zh: 'zh-CN', ja: 'ja-JP', ru: 'ru-RU' }[currentLang] || 'el-GR';
             
-            utterance.rate = 0.95;   // ελαφρώς πιο αργά από το default -> πιο φυσικό
+            utterance.rate = 0.90;   // ελαφρώς πιο αργά από το default -> πιο φυσικό
             utterance.pitch = 1.05;  // ελαφρώς πιο ψηλός τόνος -> πιο γλυκιά/ζεστή χροιά
             
             window.speechSynthesis.speak(utterance);
