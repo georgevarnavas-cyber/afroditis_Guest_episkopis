@@ -858,7 +858,7 @@
             cleanText = fixSpeechPronunciation(cleanText, currentLang);
 
             // Το ElevenLabs (φυσική φωνή, χρεώνεται ανά χαρακτήρα) χρησιμοποιείται ΜΟΝΟ για τις
-            // απαντήσεις του Varnavas_Chat.ai. Οι έτοιμες κατηγορίες μας (wifi, κανόνες, ταξί, κλπ.)
+            // απαντήσεις του varnavas_agent.ai. Οι έτοιμες κατηγορίες μας (wifi, κανόνες, ταξί, κλπ.)
             // συνεχίζουν να ακούγονται δωρεάν, χωρίς κατανάλωση χαρακτήρων.
             if (source === 'varnavas') {
                 speakWithElevenLabs(cleanText);
@@ -935,10 +935,10 @@
                 messageWrapper.innerHTML = `<div class="${bubbleClass}"><div>${safeText}</div></div>`;
             } else {
                 // Όταν η απάντηση έρχεται από το ζωντανό AI fallback (όχι από τις έτοιμες
-                // κατηγορίες μας), δείχνουμε καθαρά μια ταμπέλα "🤖 Varnavas_Chat.ai" πάνω
+                // κατηγορίες μας), δείχνουμε καθαρά μια ταμπέλα "🤖 varnavas_agent.ai" πάνω
                 // από τη φούσκα, ώστε ο επισκέπτης να ξέρει ότι απάντησε ο "ελεύθερος" βοηθός.
                 const labelHtml = source === 'varnavas'
-                    ? `<span class="text-[10px] font-bold text-[#4A5D23] ml-1">🤖 Varnavas_Chat.ai</span>`
+                    ? `<span class="text-[10px] font-bold text-[#4A5D23] ml-1">🤖 varnavas_agent.ai</span>`
                     : '';
                 
                 // ΣΗΜΑΝΤΙΚΟ ΓΙΑ iOS SAFARI: το autoplay ήχου μέσω setTimeout μπλοκάρεται μερικές φορές
