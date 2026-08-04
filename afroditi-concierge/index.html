@@ -789,7 +789,8 @@
                 let imagesHtml = '';
                 category.options.forEach((opt, oIdx) => {
                     const isPrimaryImage = cIdx === 0 && oIdx === 0;
-                    imagesHtml += `<img src="${opt.image}" data-idx="${oIdx}" loading="${isPrimaryImage ? 'eager' : 'lazy'}" decoding="async" fetchpriority="${isPrimaryImage ? 'high' : 'auto'}" width="1200" height="675" onerror="this.onerror=null;this.src='${imgFallback}';" class="w-full h-44 object-cover shrink-0 snap-center fade-in-img" alt="${escapeHtml(opt.title)}">`;
+                    const photoSource = (window.__AFRODITI_PHOTOS && window.__AFRODITI_PHOTOS[opt.image]) || opt.image;
+                    imagesHtml += `<img src="${photoSource}" data-idx="${oIdx}" loading="${isPrimaryImage ? 'eager' : 'lazy'}" decoding="async" fetchpriority="${isPrimaryImage ? 'high' : 'auto'}" width="1200" height="675" onerror="this.onerror=null;this.src='${imgFallback}';" class="w-full h-44 object-cover shrink-0 snap-center fade-in-img" alt="${escapeHtml(opt.title)}">`;
                 });
 
                 let buttonsHtml = '';
