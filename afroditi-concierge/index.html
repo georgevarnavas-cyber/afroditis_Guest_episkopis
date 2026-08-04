@@ -785,7 +785,6 @@
             `;
             renderPlaces();
 
-            try { localStorage.setItem('agh_preferred_lang', lang); } catch (e) { /* private browsing κλπ. - αγνοείται */ }
         }
 
         // 🚀 ΦΩΝΗ: Google Translate TTS πρώτα (πιο φυσικός ήχος),
@@ -1159,14 +1158,8 @@
             });
 
             // Επαναφορά της προηγούμενης προτίμησης γλώσσας του επισκέπτη (αν υπάρχει)
-            let initialLang = 'en';
-            try {
-                const saved = localStorage.getItem('agh_preferred_lang');
-                if (saved && db[saved]) initialLang = saved;
-            } catch (e) { /* private browsing κλπ. - αγνοείται */ }
-            
-            langSelectEl.value = initialLang;
-            updateUI(initialLang);
+            langSelectEl.value = 'en';
+            updateUI('en');
 
             fetchLiveWeather();
             // Ανανέωση καιρού κάθε 15 λεπτά ώστε η θερμοκρασία να μένει ενημερωμένη
