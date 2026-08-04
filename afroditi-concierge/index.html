@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -75,8 +75,8 @@
 </a>
 
                 <select id="lang-select" aria-label="Επιλογή γλώσσας / Select language" class="bg-slate-100 text-slate-700 text-xs font-bold py-2 px-3 rounded-xl border-none focus:outline-none cursor-pointer">
-                    <option value="el">🇬🇷 Ελληνικά</option>
                     <option value="en">🇬🇧 English</option>
+                    <option value="el">🇬🇷 Ελληνικά</option>
                     <option value="fr">🇫🇷 Français</option>
                     <option value="de">🇩🇪 Deutsch</option>
                     <option value="es">🇪🇸 Español</option>
@@ -127,7 +127,7 @@
         const propertyCoords = { lat: 39.376448, lng: 22.9806665 };
         // Ανίχνευση iOS (iPhone/iPad/iPod, συμπεριλαμβανομένου του iPadOS που δηλώνει "MacIntel")
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-        let currentLang = 'el';
+        let currentLang = 'en';
         let liveTemperature = "24";
 
         // 🚀 ΑΣΦΑΛΕΣ RENDERING ΚΕΙΜΕΝΟΥ (αποτροπή XSS από είσοδο χρήστη)
@@ -1159,7 +1159,7 @@
             });
 
             // Επαναφορά της προηγούμενης προτίμησης γλώσσας του επισκέπτη (αν υπάρχει)
-            let initialLang = 'el';
+            let initialLang = 'en';
             try {
                 const saved = localStorage.getItem('agh_preferred_lang');
                 if (saved && db[saved]) initialLang = saved;
