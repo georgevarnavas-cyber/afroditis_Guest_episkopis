@@ -1,4 +1,4 @@
-const CACHE_NAME = 'afroditi-guest-house-fast-chat-v7-2026-09-11';
+const CACHE_NAME = 'afroditi-guest-house-cloudflare-ai-v8-2026-09-11';
 const CORE_ASSETS = [
   './',
   './index.html',
