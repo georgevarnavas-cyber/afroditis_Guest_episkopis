@@ -1,7 +1,8 @@
-const CACHE_NAME = 'afroditi-guest-house-v6-2026-08-04';
+const CACHE_NAME = 'afroditi-guest-house-fast-chat-v7-2026-09-11';
 const CORE_ASSETS = [
   './',
   './index.html',
+  './fast-chat.js',
   './manifest.json',
   './app-icon-192.png',
   './app-icon-512.png'
