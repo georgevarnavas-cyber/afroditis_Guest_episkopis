@@ -1,8 +1,9 @@
-const CACHE_NAME = 'afroditi-guest-house-cloudflare-ai-v8-2026-09-11';
+const CACHE_NAME = 'afroditi-guest-house-firefox-voice-v9-2026-09-11';
 const CORE_ASSETS = [
   './',
   './index.html',
   './fast-chat.js',
+  './voice-compat.js',
   './manifest.json',
   './app-icon-192.png',
   './app-icon-512.png'
